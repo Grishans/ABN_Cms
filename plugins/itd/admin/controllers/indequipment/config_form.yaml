@@ -1,0 +1,11 @@
+name: IndEquipment
+modelClass: Itd\Admin\Models\IndEquipment
+form: $/itd/admin/models/indequipment/fields.yaml
+defaultRedirect: itd/admin/indequipment
+create:
+    redirect: 'itd/admin/indequipment/update/:id'
+    redirectClose: itd/admin/indequipment
+update:
+    redirect: itd/admin/indequipment
+    redirectClose: itd/admin/indequipment
+preview: {  }

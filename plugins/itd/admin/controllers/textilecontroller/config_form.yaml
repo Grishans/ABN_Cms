@@ -1,0 +1,11 @@
+name: TextileController
+modelClass: Itd\Admin\Models\Textile
+form: $/itd/admin/models/textile/fields.yaml
+defaultRedirect: itd/admin/textilecontroller
+create:
+    redirect: 'itd/admin/textilecontroller/update/:id'
+    redirectClose: itd/admin/textilecontroller
+update:
+    redirect: itd/admin/textilecontroller
+    redirectClose: itd/admin/textilecontroller
+preview: {  }

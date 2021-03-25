@@ -1,0 +1,106 @@
+[builderList textileList]
+modelClass = "Itd\Admin\Models\Textile"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title_page_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList menuList]
+modelClass = "Itd\Admin\Models\MenuItem"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "item_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set textile = textileList.records[0] %}
+{% set menu = menuList.records[0] %}
+
+<section class="block__wrap textile">
+    <div class="fullBlock">
+      <div class="fullBlock__textile__wrap">
+        <div class="ftw__text">
+          <p class="content__title">
+            {{ textile.title_page_1 }}
+          </p>
+          <p class="content__text">
+            {{ textile.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+        </div>
+        <div class="ftw__img">
+          <img src="{{ 'assets/img/Textile/textileVectorTop.png'|theme }}" alt="" />
+        </div>
+      </div>
+      <div class="mainTitle mainTitle__textile1">{{ menu.item_3 }}</div>
+      <div class="mainTitle mainTitle__textile2">{{ menu.item_4 }}</div>
+    </div>
+    <div class="contentBlock">
+      <div class="contentBlock__textile__wrap">
+        <div class="ctw__block1">
+          <img
+            class="textile__block1__bg"
+            src="{{ 'assets/img/Textile/ellipseInfoTop.png'|theme }}"
+            alt=""
+          />
+          <div class="ctwb1__text">
+            <p class="secondTitle">
+              {{ textile.title_page_2 }}
+            </p>
+            <p class="content__text">
+              {{ textile.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+        </div>
+        <div class="ctw__block2">
+          <div class="ctw__block2__wrap">
+            <div class="ctw__block2__box">
+              <p class="content__title">{{ textile.subtitle_1_page_2 }}</p>
+              <p class="content__text">
+                {{ textile.subdesc_1_page_2|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+            <div class="ctw__block2__box">
+              <p class="content__title">{{ textile.subtitle_2_page_2 }}</p>
+              <p class="content__text">
+                {{ textile.subdesc_2_page_2|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+            <div class="ctw__block2__box">
+              <p class="content__title">{{ textile.subtitle_3_page_2 }}</p>
+              <p class="content__text">
+                {{ textile.subdesc_3_page_2|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+            <span class="mainBtn">
+              <span>Связаться с нами</span>
+            </span>
+          </div>
+          
+          <img
+            class="textile__block2__bg1"
+            src="{{ 'assets/img/Textile/ellipseInfoRightCenter.png'|theme }}"
+            alt=""
+          />
+        </div>
+        <div class="footer">
+          <p>
+            © 2021
+            <a href="https://itd.company/portfolio/"
+              >ITD Company.</a
+            >
+            All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      class="textile__block2__bg2"
+      src="{{ 'assets/img/Textile/ellipseInfoBottom.svg'|theme }}"
+      alt=""
+    />
+  </section>

@@ -1,0 +1,11 @@
+name: Social
+modelClass: Itd\Admin\Models\Social
+form: $/itd/admin/models/social/fields.yaml
+defaultRedirect: itd/admin/social
+create:
+    redirect: 'itd/admin/social/update/:id'
+    redirectClose: itd/admin/social
+update:
+    redirect: itd/admin/social
+    redirectClose: itd/admin/social
+preview: {  }

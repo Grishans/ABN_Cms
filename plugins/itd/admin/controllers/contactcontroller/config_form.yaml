@@ -1,0 +1,11 @@
+name: ContactController
+modelClass: Itd\Admin\Models\Contact
+form: $/itd/admin/models/contact/fields.yaml
+defaultRedirect: itd/admin/contactcontroller
+create:
+    redirect: 'itd/admin/contactcontroller/update/:id'
+    redirectClose: itd/admin/contactcontroller
+update:
+    redirect: itd/admin/contactcontroller
+    redirectClose: itd/admin/contactcontroller
+preview: {  }

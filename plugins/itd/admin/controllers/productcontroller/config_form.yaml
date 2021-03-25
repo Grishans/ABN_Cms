@@ -1,0 +1,11 @@
+name: ProductController
+modelClass: Itd\Admin\Models\Product
+form: $/itd/admin/models/product/fields.yaml
+defaultRedirect: itd/admin/productcontroller
+create:
+    redirect: 'itd/admin/productcontroller/update/:id'
+    redirectClose: itd/admin/productcontroller
+update:
+    redirect: itd/admin/productcontroller
+    redirectClose: itd/admin/productcontroller
+preview: {  }

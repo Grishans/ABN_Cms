@@ -1,0 +1,7 @@
+columns:
+    title_page_1:
+        label: 'itd.admin::lang.ind_equipment.title'
+        type: text
+    desc_page_1:
+        label: 'itd.admin::lang.ind_equipment.desc'
+        type: text

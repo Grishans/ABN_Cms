@@ -1,0 +1,25 @@
+columns:
+    item_1:
+        label: 'itd.admin::lang.menu_items.item_1'
+        type: text
+    item_2:
+        label: 'itd.admin::lang.menu_items.item_2'
+        type: text
+    item_3:
+        label: 'itd.admin::lang.menu_items.item_3'
+        type: text
+    item_4:
+        label: 'itd.admin::lang.menu_items.item_4'
+        type: text
+    item_5:
+        label: 'itd.admin::lang.menu_items.item_5'
+        type: text
+    item_6:
+        label: 'itd.admin::lang.menu_items.item_6'
+        type: text
+    item_7:
+        label: 'itd.admin::lang.menu_items.item_7'
+        type: text
+    item_8:
+        label: 'itd.admin::lang.menu_items.item_8'
+        type: text

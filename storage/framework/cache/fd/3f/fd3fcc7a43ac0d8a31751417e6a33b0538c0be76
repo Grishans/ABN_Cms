@@ -1,0 +1,227 @@
+1616690698a:1:{s:20:"site/electronics.htm";a:7:{s:8:"fileName";s:20:"site/electronics.htm";s:7:"content";s:4490:"[builderList electronicsList]
+modelClass = "Itd\Admin\Models\Electronic"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title_page_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList menuList]
+modelClass = "Itd\Admin\Models\MenuItem"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "item_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set electronic = electronicsList.records[0] %}
+{% set menu = menuList.records[0] %}
+
+<section class="block__wrap electronics">
+    <div class="fullBlock">
+      <div class="fullBlock__electroinic__wrap">
+        <div class="few__block">
+          <p class="content__title">
+            {{ electronic.title_page_1 }}
+          </p>
+          <p class="content__text">
+            {{ electronic.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+        </div>
+      </div>
+      <div class="mainTitle mainTitle__electronic">{{ menu.item_4 }}</div>
+      <div class="mainTitle mainTitle__electronic1">{{ menu.item_5 }}</div>
+      <img
+        class="fullBlock__bg"
+        src="{{ electronic.image_1_page_1.path }}"
+        alt=""
+      />
+    </div>
+    <div class="contentBlock">
+      <div class="contentBlock__electronics__wrap">
+        <div class="contentBlock__electronic__block1">
+          <p class="content__title">
+            {{ electronic.title_page_2 }}
+          </p>
+          <div class="ceb1__wrap">
+            <div class="cew__text">
+              <p class="content__title">{{ electronic.subtitle_page_2 }}</p>
+              <p class="content__text">
+                {{ electronic.subdesc_page_2|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+          </div>
+          <div class="electronic__bg1">
+            <div class="electronic__bg1__wrap">
+              <img
+                class="electronic__bg1__cube"
+                src="{{ 'assets/img/Electronic/cube.png'|theme }}"
+                alt=""
+              />
+              <img src="{{ electronic.image_1_page_2.path }}" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="contentBlock__electronic__block2">
+          <div class="ceb2__wrap">
+            <div class="ceb2w__block">
+              <img src="{{ electronic.image_1_page_3.path }}" alt="" />
+              <p class="secondTitle">{{ electronic.title_1_page_3 }}</p>
+              <p class="text">
+                {{ electronic.desc_1_page_3|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+            <div class="ceb2w__block">
+              <img src="{{ electronic.image_2_page_3.path }}" alt="" />
+              <p class="secondTitle">{{ electronic.title_2_page_3 }}</p>
+              <p class="text">
+                {{ electronic.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+            <div class="ceb2w__block">
+              <img src="{{ electronic.image_3_page_3.path }}" alt="" />
+              <p class="secondTitle">{{ electronic.title_3_page_3 }}</p>
+              <p class="text">
+                {{ electronic.desc_3_page_3|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contentBlock__electronic__block3">
+          <div class="cwb3__wrap">
+            <p class="content__title">{{ electronic.title_page_4 }}</p>
+            <p class="content__text">
+              {{ electronic.desc_page_4|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+            <span class="mainBtn">
+              <span>Связаться с нами</span>
+            </span>
+          </div>
+          <div class="electronic__bg2">
+            <div class="electronic__bg2__wrap">
+              <img
+                class="electronic__bg2__cube"
+                src="{{ 'assets/img/Electronic/cube.png'|theme }}"
+                alt=""
+              />
+              <img src="{{ electronic.image_1_page_4.path }}" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>
+            © 2021<a href="https://itd.company/portfolio/"
+              >ITD Company.</a
+            >All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>";s:5:"mtime";i:1616592053;s:6:"markup";s:3973:"{% set electronic = electronicsList.records[0] %}
+{% set menu = menuList.records[0] %}
+
+<section class="block__wrap electronics">
+    <div class="fullBlock">
+      <div class="fullBlock__electroinic__wrap">
+        <div class="few__block">
+          <p class="content__title">
+            {{ electronic.title_page_1 }}
+          </p>
+          <p class="content__text">
+            {{ electronic.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+        </div>
+      </div>
+      <div class="mainTitle mainTitle__electronic">{{ menu.item_4 }}</div>
+      <div class="mainTitle mainTitle__electronic1">{{ menu.item_5 }}</div>
+      <img
+        class="fullBlock__bg"
+        src="{{ electronic.image_1_page_1.path }}"
+        alt=""
+      />
+    </div>
+    <div class="contentBlock">
+      <div class="contentBlock__electronics__wrap">
+        <div class="contentBlock__electronic__block1">
+          <p class="content__title">
+            {{ electronic.title_page_2 }}
+          </p>
+          <div class="ceb1__wrap">
+            <div class="cew__text">
+              <p class="content__title">{{ electronic.subtitle_page_2 }}</p>
+              <p class="content__text">
+                {{ electronic.subdesc_page_2|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+          </div>
+          <div class="electronic__bg1">
+            <div class="electronic__bg1__wrap">
+              <img
+                class="electronic__bg1__cube"
+                src="{{ 'assets/img/Electronic/cube.png'|theme }}"
+                alt=""
+              />
+              <img src="{{ electronic.image_1_page_2.path }}" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="contentBlock__electronic__block2">
+          <div class="ceb2__wrap">
+            <div class="ceb2w__block">
+              <img src="{{ electronic.image_1_page_3.path }}" alt="" />
+              <p class="secondTitle">{{ electronic.title_1_page_3 }}</p>
+              <p class="text">
+                {{ electronic.desc_1_page_3|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+            <div class="ceb2w__block">
+              <img src="{{ electronic.image_2_page_3.path }}" alt="" />
+              <p class="secondTitle">{{ electronic.title_2_page_3 }}</p>
+              <p class="text">
+                {{ electronic.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+            <div class="ceb2w__block">
+              <img src="{{ electronic.image_3_page_3.path }}" alt="" />
+              <p class="secondTitle">{{ electronic.title_3_page_3 }}</p>
+              <p class="text">
+                {{ electronic.desc_3_page_3|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contentBlock__electronic__block3">
+          <div class="cwb3__wrap">
+            <p class="content__title">{{ electronic.title_page_4 }}</p>
+            <p class="content__text">
+              {{ electronic.desc_page_4|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+            <span class="mainBtn">
+              <span>Связаться с нами</span>
+            </span>
+          </div>
+          <div class="electronic__bg2">
+            <div class="electronic__bg2__wrap">
+              <img
+                class="electronic__bg2__cube"
+                src="{{ 'assets/img/Electronic/cube.png'|theme }}"
+                alt=""
+              />
+              <img src="{{ electronic.image_1_page_4.path }}" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>
+            © 2021<a href="https://itd.company/portfolio/"
+              >ITD Company.</a
+            >All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>";s:4:"code";N;s:27:"builderList electronicsList";a:8:{s:10:"modelClass";s:27:"Itd\Admin\Models\Electronic";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:12:"title_page_1";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:20:"builderList menuList";a:8:{s:10:"modelClass";s:25:"Itd\Admin\Models\MenuItem";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:6:"item_1";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

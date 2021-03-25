@@ -1,0 +1,11 @@
+name: MenuItemController
+modelClass: Itd\Admin\Models\MenuItem
+form: $/itd/admin/models/menuitem/fields.yaml
+defaultRedirect: itd/admin/menuitemcontroller
+create:
+    redirect: 'itd/admin/menuitemcontroller/update/:id'
+    redirectClose: itd/admin/menuitemcontroller
+update:
+    redirect: itd/admin/menuitemcontroller
+    redirectClose: itd/admin/menuitemcontroller
+preview: {  }

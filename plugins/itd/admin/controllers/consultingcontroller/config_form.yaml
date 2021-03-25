@@ -1,0 +1,11 @@
+name: Консалтинг
+modelClass: Itd\Admin\Models\Consulting
+form: $/itd/admin/models/consulting/fields.yaml
+defaultRedirect: itd/admin/consultingcontroller
+create:
+    redirect: 'itd/admin/consultingcontroller/update/:id'
+    redirectClose: itd/admin/consultingcontroller
+update:
+    redirect: itd/admin/consultingcontroller
+    redirectClose: itd/admin/consultingcontroller
+preview: {  }

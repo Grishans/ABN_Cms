@@ -1,0 +1,102 @@
+tabs:
+    fields:
+        title_page_1:
+            label: 'itd.admin::lang.textile.title'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.textile.page_1'
+        desc_page_1:
+            label: 'itd.admin::lang.textile.desc'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.textile.page_1'
+        image_page_1:
+            label: 'itd.admin::lang.textile.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'itd.admin::lang.textile.page_1'
+        title_page_2:
+            label: 'itd.admin::lang.textile.title'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.textile.page_2'
+        desc_page_2:
+            label: 'itd.admin::lang.textile.desc'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.textile.page_2'
+        image_1_page_2:
+            label: 'itd.admin::lang.textile.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'itd.admin::lang.textile.page_2'
+        image_2_page_2:
+            label: 'itd.admin::lang.textile.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'itd.admin::lang.textile.page_2'
+        section1:
+            label: 'itd.admin::lang.textile.block_1'
+            span: left
+            type: section
+            tab: 'itd.admin::lang.textile.page_2'
+        section2:
+            label: 'itd.admin::lang.textile.block_2'
+            span: right
+            type: section
+            tab: 'itd.admin::lang.textile.page_2'
+        subtitle_1_page_2:
+            label: 'itd.admin::lang.textile.subtitle_1'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.textile.page_2'
+        subtitle_2_page_2:
+            label: 'itd.admin::lang.textile.subtitle_2'
+            span: auto
+            type: text
+            tab: 'itd.admin::lang.textile.page_2'
+        subdesc_1_page_2:
+            label: 'itd.admin::lang.textile.subdesc_1'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.textile.page_2'
+        subdesc_2_page_2:
+            label: 'itd.admin::lang.textile.subdesc_2'
+            size: ''
+            span: right
+            type: richeditor
+            tab: 'itd.admin::lang.textile.page_2'
+        section3:
+            label: 'itd.admin::lang.textile.block_3'
+            span: left
+            type: section
+            tab: 'itd.admin::lang.textile.page_2'
+        subtitle_3_page_2:
+            label: 'itd.admin::lang.textile.subtitle_3'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.textile.page_2'
+        subdesc_3_page_2:
+            label: 'itd.admin::lang.textile.subdesc_3'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.textile.page_2'

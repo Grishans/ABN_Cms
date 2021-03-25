@@ -1,0 +1,74 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table itd_admin_main_page'
+    - builder_table_create_itd_admin_main_page.php
+1.0.3:
+    - 'Updated table itd_admin_main_page'
+    - builder_table_update_itd_admin_main_page.php
+1.0.4:
+    - 'Created table itd_admin_textile'
+    - builder_table_create_itd_admin_textile.php
+1.0.5:
+    - 'Created table itd_admin_electronics'
+    - builder_table_create_itd_admin_electronics.php
+1.0.6:
+    - 'Created table itd_admin_products'
+    - builder_table_create_itd_admin_products.php
+1.0.7:
+    - 'Updated table itd_admin_products'
+    - builder_table_update_itd_admin_products.php
+1.0.8:
+    - 'Created table itd_admin_ind_equipment'
+    - builder_table_create_itd_admin_ind_equipment.php
+1.0.9:
+    - 'Created table itd_admin_consulting'
+    - builder_table_create_itd_admin_consulting.php
+1.0.10:
+    - 'Updated table itd_admin_consulting'
+    - builder_table_update_itd_admin_consulting.php
+1.0.11:
+    - 'Updated table itd_admin_consulting'
+    - builder_table_update_itd_admin_consulting_2.php
+1.0.12:
+    - 'Created table itd_admin_menu_items'
+    - builder_table_create_itd_admin_menu_items.php
+1.0.13:
+    - 'Created table itd_admin_socials'
+    - builder_table_create_itd_admin_socials.php
+1.0.14:
+    - 'Updated table itd_admin_electronics'
+    - builder_table_update_itd_admin_electronics.php
+1.0.15:
+    - 'Updated table itd_admin_electronics'
+    - builder_table_update_itd_admin_electronics_2.php
+1.0.16:
+    - 'Updated table itd_admin_products'
+    - builder_table_update_itd_admin_products_2.php
+1.0.17:
+    - 'Updated table itd_admin_ind_equipment'
+    - builder_table_update_itd_admin_ind_equipment.php
+1.0.18:
+    - 'Updated table itd_admin_consulting'
+    - builder_table_update_itd_admin_consulting_3.php
+1.0.19:
+    - 'Updated table itd_admin_consulting'
+    - builder_table_update_itd_admin_consulting_4.php
+1.0.20:
+    - 'Updated table itd_admin_menu_items'
+    - builder_table_update_itd_admin_menu_items.php
+1.0.21:
+    - 'Updated table itd_admin_menu_items'
+    - builder_table_update_itd_admin_menu_items_2.php
+1.0.22:
+    - 'Updated table itd_admin_menu_items'
+    - builder_table_update_itd_admin_menu_items_3.php
+1.0.23:
+    - 'Created table itd_admin_contacts'
+    - builder_table_create_itd_admin_contacts.php
+1.0.24:
+    - 'Updated table itd_admin_contacts'
+    - builder_table_update_itd_admin_contacts.php
+1.0.25:
+    - 'Updated table itd_admin_contacts'
+    - builder_table_update_itd_admin_contacts_2.php

@@ -1,0 +1,7 @@
+columns:
+    title_page_1:
+        label: 'itd.admin::lang.main_page.title_page'
+        type: text
+    desc_page_1:
+        label: 'itd.admin::lang.main_page.desc_page'
+        type: text

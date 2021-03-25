@@ -1,0 +1,95 @@
+[builderList aboutList]
+modelClass = "Itd\Admin\Models\MainPage"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title_page_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList menuList]
+modelClass = "Itd\Admin\Models\MenuItem"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "item_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set mainInfo = aboutList.records[0] %}
+{% set menu = menuList.records[0] %}
+<section class="block__wrap about">
+    <div class="fullBlock">
+      <img class="logoMobil" src="{{ 'assets/img/logo.png'|theme }}" alt="">
+      <div class="fullblock__about__wrap">
+        <div class="faw__text">
+          <p class="content__title">
+            {{ mainInfo.title_page_1 }}
+          </p>
+          <p class="content__text">
+            {{ mainInfo.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+          <span class="mainBtn">
+            <span>Связаться с нами</span>
+          </span>
+        </div>
+        <div class="faw__img">
+          <img src="{{ mainInfo.image_page_1.path }}" alt="" />
+        </div>
+      </div>
+
+      <div class="mainTitle">{{ menu.item_1 }}</div>
+      <div class="fba__bg2">
+        <img src="{{ 'assets/img/Main/windowLampsTop.png'|theme }}" alt="" />
+      </div>
+    </div>
+    <div class="contentBlock">
+      <div class="contentBlock__about__wrap">
+        <div class="caw__title">
+          <p class="secondTitle">
+            {{ mainInfo.title_page_2 }}
+          </p>
+        </div>
+        <div class="caw__text">
+          <div class="cawt_block">
+            <p class="secondTitle">{{ mainInfo.subtitle_1_page_2 }}</p>
+            <p class="content__text">
+              {{ mainInfo.subdesc_1_page_2|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+          <div class="cawt_block">
+            <p class="secondTitle">{{ mainInfo.subtitle_2_page_2 }}</p>
+            <p class="content__text">
+              {{ mainInfo.subdesc_2_page_2|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+          <div class="cawt_block">
+            <p class="secondTitle">{{ mainInfo.subtitle_3_page_2 }}</p>
+            <p class="content__text">
+              {{ mainInfo.subdesc_3_page_2|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+        </div>
+        <div class="caw__btn">
+          <span class="mainBtn">
+            <span>Связаться с нами</span>
+          </span>
+        </div>
+      </div>
+      <div class="fba_bg3">
+        <img src="{{ 'assets/img/Main/aboutVectorBottom.png'|theme }}" alt="" />
+      </div>
+      <div class="fba_bg4">
+        <img src="{{ 'assets/img/circle.png'|theme }}" alt="" />
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        © 2021
+        <a href="https://itd.company/portfolio/">ITD Company.</a> All
+        rights reserved
+      </p>
+    </div>
+  </section>

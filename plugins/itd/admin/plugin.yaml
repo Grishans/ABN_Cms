@@ -1,0 +1,48 @@
+plugin:
+    name: 'itd.admin::lang.plugin.name'
+    description: 'itd.admin::lang.plugin.description'
+    author: itd
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'itd.admin::lang.admin.admin'
+        url: itd/admin/mainpagecontroller
+        icon: icon-user
+        sideMenu:
+            main-page-menu-item:
+                label: 'itd.admin::lang.admin.main_page'
+                url: itd/admin/mainpagecontroller
+                icon: icon-home
+            textile-menu-item:
+                label: 'itd.admin::lang.admin.textile'
+                url: itd/admin/textilecontroller
+                icon: icon-inr
+            electronics-menu-item:
+                label: 'itd.admin::lang.admin.electronics'
+                url: itd/admin/electroniccontroller
+                icon: icon-plug
+            products-menu-item:
+                label: 'itd.admin::lang.admin.products'
+                url: itd/admin/productcontroller
+                icon: icon-cubes
+            ind-equipment-menu-item:
+                label: 'itd.admin::lang.admin.ind_equipment'
+                url: itd/admin/indequipment
+                icon: icon-cogs
+            consulting-menu-item:
+                label: 'itd.admin::lang.admin.consulting'
+                url: itd/admin/consultingcontroller
+                icon: icon-info
+            menu-menu-item:
+                label: 'itd.admin::lang.admin.menu_items'
+                url: itd/admin/menuitemcontroller
+                icon: icon-bars
+            socials-menu-item:
+                label: 'itd.admin::lang.admin.socials'
+                url: itd/admin/social
+                icon: icon-external-link
+            contacts-menu-item:
+                label: 'itd.admin::lang.admin.contacts'
+                url: itd/admin/contactcontroller
+                icon: icon-mobile-phone

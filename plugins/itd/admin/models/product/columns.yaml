@@ -1,0 +1,7 @@
+columns:
+    title_page_1:
+        label: 'itd.admin::lang.products.title'
+        type: text
+    desc_page_1:
+        label: 'itd.admin::lang.products.desc'
+        type: switch

@@ -1,0 +1,7 @@
+columns:
+    title_page_1:
+        label: 'itd.admin::lang.consulting.title'
+        type: text
+    desc_page_2:
+        label: 'itd.admin::lang.consulting.desc'
+        type: text

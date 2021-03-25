@@ -1,0 +1,33 @@
+fields:
+    name_form:
+        label: 'itd.admin::lang.contacts.name_form'
+        span: auto
+        type: text
+    field_1:
+        label: 'itd.admin::lang.contacts.field_1'
+        span: right
+        type: text
+    field_2:
+        label: 'itd.admin::lang.contacts.field_2'
+        span: left
+        type: text
+    field_3:
+        label: 'itd.admin::lang.contacts.field_3'
+        span: right
+        type: text
+    text_send_btn:
+        label: 'itd.admin::lang.contacts.text_send_btn'
+        span: left
+        type: text
+    text_move_btn:
+        label: 'itd.admin::lang.contacts.text_move_btn'
+        span: right
+        type: text
+    address:
+        label: 'itd.admin::lang.contacts.address'
+        span: left
+        type: text
+    email:
+        label: Email
+        span: right
+        type: text

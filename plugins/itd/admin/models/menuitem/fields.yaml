@@ -1,0 +1,50 @@
+fields:
+    section1:
+        label: 'itd.admin::lang.menu_items.block_menu'
+        span: full
+        type: section
+    item_1:
+        label: 'itd.admin::lang.menu_items.item_1'
+        span: left
+        type: text
+    item_2:
+        label: 'itd.admin::lang.menu_items.item_2'
+        span: right
+        type: text
+    item_3:
+        label: 'itd.admin::lang.menu_items.item_3'
+        span: left
+        type: text
+    item_4:
+        label: 'itd.admin::lang.menu_items.item_4'
+        span: right
+        type: text
+    item_5:
+        label: 'itd.admin::lang.menu_items.item_5'
+        span: left
+        type: text
+    item_6:
+        label: 'itd.admin::lang.menu_items.item_6'
+        span: right
+        type: text
+    item_7:
+        label: 'itd.admin::lang.menu_items.item_7'
+        span: left
+        type: text
+    item_8:
+        label: 'itd.admin::lang.menu_items.item_8'
+        span: right
+        type: text
+    section2:
+        label: 'itd.admin::lang.menu_items.logo'
+        span: full
+        type: section
+    logo:
+        label: 'itd.admin::lang.menu_items.upload_logo'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload

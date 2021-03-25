@@ -1,0 +1,86 @@
+tabs:
+    fields:
+        title_page_1:
+            label: 'itd.admin::lang.main_page.title_page'
+            span: auto
+            type: text
+            tab: 'itd.admin::lang.main_page.tab1'
+        desc_page_1:
+            label: 'itd.admin::lang.main_page.desc_page'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.main_page.tab1'
+        image_page_1:
+            label: 'itd.admin::lang.main_page.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'itd.admin::lang.main_page.tab1'
+        title_page_2:
+            label: 'itd.admin::lang.main_page.title_page'
+            span: auto
+            type: text
+            tab: 'itd.admin::lang.main_page.tab2'
+        image_page_2:
+            label: 'itd.admin::lang.main_page.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'itd.admin::lang.main_page.tab2'
+        section1:
+            label: 'itd.admin::lang.main_page.block_1'
+            span: left
+            type: section
+            tab: 'itd.admin::lang.main_page.tab2'
+        subtitle_1_page_2:
+            label: 'itd.admin::lang.main_page.subtitle_1'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.main_page.tab2'
+        subdesc_1_page_2:
+            label: 'itd.admin::lang.main_page.subdesc_1'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.main_page.tab2'
+        section2:
+            label: 'itd.admin::lang.main_page.block_2'
+            span: left
+            type: section
+            tab: 'itd.admin::lang.main_page.tab2'
+        subtitle_2_page_2:
+            label: 'itd.admin::lang.main_page.subtitle_2'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.main_page.tab2'
+        subdesc_2_page_2:
+            label: 'itd.admin::lang.main_page.subdesc_2'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.main_page.tab2'
+        section3:
+            label: 'itd.admin::lang.main_page.block_3'
+            span: left
+            type: section
+            tab: 'itd.admin::lang.main_page.tab2'
+        subtitle_3_page_2:
+            label: 'itd.admin::lang.main_page.subtitle_3'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.main_page.tab2'
+        subdesc_3_page_2:
+            label: 'itd.admin::lang.main_page.subdesc_3'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.main_page.tab2'

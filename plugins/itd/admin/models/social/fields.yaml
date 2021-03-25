@@ -1,0 +1,19 @@
+fields:
+    name:
+        label: 'itd.admin::lang.socials.name'
+        span: auto
+        type: text
+    url:
+        label: 'itd.admin::lang.socials.url'
+        span: right
+        type: text
+    logo:
+        label: 'itd.admin::lang.socials.upload_logo'
+        mode: image
+        fileTypes: svg
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: left
+        type: fileupload

@@ -1,0 +1,125 @@
+[builderList equipmentList]
+modelClass = "Itd\Admin\Models\IndEquipment"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title_page_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList menuList]
+modelClass = "Itd\Admin\Models\MenuItem"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "item_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set equipment = equipmentList.records[0] %}
+{% set menu = menuList.records[0] %}
+
+<section class="block__wrap prom">
+    <div class="fullBlock promFullBlock">
+      <div class="fullBlock__prom__wrap">
+        <div class="fpw__text">
+          <p class="content__title">
+            {{ equipment.title_page_1 }}
+          </p>
+          <p class="content__text">
+            {{ equipment.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+        </div>
+        <div class="fpw__img">
+          <img src="{{ equipment.image_1_page_1.path }}" alt="" />
+        </div>
+      </div>
+      <div class="mainTitle mainTitle__electronic">{{ menu.item_6 }}</div>
+    </div>
+    <div class="contentBlock">
+      <div class="contentBlock__prom_wrap">
+        <div class="prom__content__Block1">
+          <div class="pcb1__text">
+            <p class="secondTitle">
+              {{ equipment.title_page_2 }}
+            </p>
+            <p class="content__text">
+              {{ equipment.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+          <div class="pcb1__img">
+            <div class="pcb1__img__wrap">
+              <img src="{{ equipment.image_1_page_2.path }}" alt="" />
+              <img
+                class="hexBG1"
+                src="{{ 'assets/img/Industrial/hexBG1.png'|theme }}"
+                alt=""
+              />
+              <img
+                class="hexBG2"
+                src="{{ 'assets/img/Industrial/hexBG2.png'|theme }}"
+                alt=""
+              />
+              <img
+                class="hexBG3"
+                src="{{ 'assets/img/Industrial/hexBG3.png'|theme }}"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="prom__content__Block2">
+          <div class="pcb2__block">
+            <div class="pcb2b__text">
+              <p class="secondTitle">{{ equipment.title_1_page_3 }}</p>
+              <p class="content__text">
+                {{ equipment.desc_1_page_3|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+            <div class="pcb2b__img">
+              <img src="{{ equipment.image_1_page_3.path }}" alt="" />
+            </div>
+          </div>
+          <div class="pcb2__block">
+            <div class="pcb2b__text">
+              <p class="secondTitle">{{ equipment.title_2_page_3 }}</p>
+              <p class="content__text">
+                {{ equipment.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+            <div class="pcb2b__img">
+              <img src="{{ equipment.image_1_page_3.path }}" alt="" />
+            </div>
+          </div>
+          <img
+            class="pcb2__bg"
+            src="{{ 'assets/img/Industrial/shapeTop.svg'|theme }}"
+            alt=""
+          />
+        </div>
+        <div class="prom__content__Block3">
+          <div class="pcb3__img">
+            <img src="{{ equipment.image_1_page_4.path }}" alt="" />
+          </div>
+          <div class="pcb3__text">
+            <p class="secondTitle">{{ equipment.title_page_4 }}</p>
+            <p class="content__text">
+              {{ equipment.desc_page_4|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+            <span class="mainBtn">
+              <span>Связаться с нами</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          © 2021
+          <a href="https://itd.company/portfolio/">ITD Company.</a>
+          All rights reserved
+        </p>
+      </div>
+    </div>
+  </section>

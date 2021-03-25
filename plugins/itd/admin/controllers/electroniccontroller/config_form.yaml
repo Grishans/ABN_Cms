@@ -1,0 +1,10 @@
+name: ElectronicController
+modelClass: Itd\Admin\Models\Electronic
+form: $/itd/admin/models/electronic/fields.yaml
+defaultRedirect: itd/admin/electroniccontroller
+create:
+    redirect: 'itd/admin/electroniccontroller/update/:id'
+    redirectClose: itd/admin/electroniccontroller
+update:
+    redirect: itd/admin/electroniccontroller
+    redirectClose: itd/admin/electroniccontroller

@@ -1,0 +1,11 @@
+name: MainPageController
+modelClass: Itd\Admin\Models\MainPage
+form: $/itd/admin/models/mainpage/fields.yaml
+defaultRedirect: itd/admin/mainpagecontroller
+create:
+    redirect: 'itd/admin/mainpagecontroller/update/:id'
+    redirectClose: itd/admin/mainpagecontroller
+update:
+    redirect: itd/admin/mainpagecontroller
+    redirectClose: itd/admin/mainpagecontroller
+preview: {  }

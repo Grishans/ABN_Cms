@@ -1,0 +1,9 @@
+columns:
+    name:
+        label: 'itd.admin::lang.socials.name'
+        type: text
+        searchable: true
+        sortable: true
+    url:
+        label: 'itd.admin::lang.socials.url'
+        type: text

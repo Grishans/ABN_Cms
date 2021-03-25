@@ -1,0 +1,148 @@
+tabs:
+    fields:
+        title_page_1:
+            label: 'itd.admin::lang.electronics.title'
+            span: auto
+            type: text
+            tab: 'itd.admin::lang.electronics.page_1'
+        desc_page_1:
+            label: 'itd.admin::lang.electronics.desc'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.electronics.page_1'
+        image_1_page_1:
+            label: 'itd.admin::lang.electronics.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'itd.admin::lang.electronics.page_1'
+        title_page_2:
+            label: 'itd.admin::lang.electronics.title'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.electronics.page_2'
+        subtitle_page_2:
+            label: 'itd.admin::lang.electronics.subtitle'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.electronics.page_2'
+        subdesc_page_2:
+            label: 'itd.admin::lang.electronics.subdesc'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.electronics.page_2'
+        image_1_page_2:
+            label: 'itd.admin::lang.electronics.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'itd.admin::lang.electronics.page_2'
+        section1:
+            label: 'itd.admin::lang.electronics.block_1'
+            span: auto
+            type: section
+            tab: 'itd.admin::lang.electronics.page_3'
+        section2:
+            label: 'itd.admin::lang.electronics.block_2'
+            span: auto
+            type: section
+            tab: 'itd.admin::lang.electronics.page_3'
+        title_1_page_3:
+            label: 'itd.admin::lang.electronics.title'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.electronics.page_3'
+        title_2_page_3:
+            label: 'itd.admin::lang.electronics.title'
+            span: right
+            type: text
+            tab: 'itd.admin::lang.electronics.page_3'
+        desc_1_page_3:
+            label: 'itd.admin::lang.electronics.desc'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.electronics.page_3'
+        desc_2_page_3:
+            label: 'itd.admin::lang.electronics.desc'
+            size: ''
+            span: right
+            type: richeditor
+            tab: 'itd.admin::lang.electronics.page_3'
+        image_1_page_3:
+            label: 'itd.admin::lang.electronics.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'itd.admin::lang.electronics.page_3'
+        image_2_page_3:
+            label: 'itd.admin::lang.electronics.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: right
+            type: fileupload
+            tab: 'itd.admin::lang.electronics.page_3'
+        section3:
+            label: 'itd.admin::lang.electronics.block_3'
+            span: left
+            type: section
+            tab: 'itd.admin::lang.electronics.page_3'
+        title_3_page_3:
+            label: 'itd.admin::lang.electronics.title'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.electronics.page_3'
+        desc_3_page_3:
+            label: 'itd.admin::lang.electronics.desc'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.electronics.page_3'
+        image_3_page_3:
+            label: 'itd.admin::lang.electronics.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'itd.admin::lang.electronics.page_3'
+        title_page_4:
+            label: 'itd.admin::lang.electronics.title'
+            span: left
+            type: text
+            tab: 'itd.admin::lang.electronics.page_4'
+        desc_page_4:
+            label: 'itd.admin::lang.electronics.desc'
+            size: ''
+            span: left
+            type: richeditor
+            tab: 'itd.admin::lang.electronics.page_4'
+        image_1_page_4:
+            label: 'itd.admin::lang.electronics.upload_image'
+            mode: image
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: left
+            type: fileupload
+            tab: 'itd.admin::lang.electronics.page_4'
