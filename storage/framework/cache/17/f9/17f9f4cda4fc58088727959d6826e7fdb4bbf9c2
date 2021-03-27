@@ -1,0 +1,199 @@
+1616838815a:1:{s:22:"site/ind_equipment.htm";a:7:{s:8:"fileName";s:22:"site/ind_equipment.htm";s:7:"content";s:3906:"[builderList equipmentList]
+modelClass = "Itd\Admin\Models\IndEquipment"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title_page_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList menuList]
+modelClass = "Itd\Admin\Models\MenuItem"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "item_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set equipment = equipmentList.records[0] %}
+{% set menu = menuList.records[0] %}
+
+<section class="block__wrap prom">
+  <div class="fullBlock promFullBlock">
+    <img class="logoMobil" src="{{ 'assets/img/logo.png'|theme }}" alt="">
+    <div class="fullBlock__prom__wrap">
+      <div class="fpw__text">
+        <p class="content__title">
+          {{ equipment.title_page_1 }}
+        </p>
+        <p class="content__text">
+          {{ equipment.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
+        </p>
+      </div>
+      <div class="fpw__img">
+        <img src="{{ equipment.image_1_page_1.path }}" alt="" />
+      </div>
+    </div>
+    <div class="mainTitle mainTitle__electronic">{{ menu.item_6 }}</div>
+  </div>
+  <div class="contentBlock">
+    <div class="contentBlock__prom_wrap">
+      <div class="prom__content__Block1">
+        <div class="pcb1__text">
+          <p class="secondTitle">
+            {{ equipment.title_page_2 }}
+          </p>
+          <p class="content__text">
+            {{ equipment.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+        </div>
+        <div class="pcb1__img">
+          <div class="pcb1__img__wrap">
+            <img src="{{ equipment.image_1_page_2.path }}" alt="" />
+            <img class="hexBG1" src="{{ 'assets/img/Industrial/hexBG1.png'|theme }}" alt="" />
+            <img class="hexBG2" src="{{ 'assets/img/Industrial/hexBG2.png'|theme }}" alt="" />
+            <img class="hexBG3" src="{{ 'assets/img/Industrial/hexBG3.png'|theme }}" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="prom__content__Block2">
+        <div class="pcb2__block">
+          <div class="pcb2b__text">
+            <p class="secondTitle">{{ equipment.title_1_page_3 }}</p>
+            <p class="content__text">
+              {{ equipment.desc_1_page_3|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+          <div class="pcb2b__img">
+            <img src="{{ equipment.image_1_page_3.path }}" alt="" />
+          </div>
+        </div>
+        <div class="pcb2__block">
+          <div class="pcb2b__text">
+            <p class="secondTitle">{{ equipment.title_2_page_3 }}</p>
+            <p class="content__text">
+              {{ equipment.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+          <div class="pcb2b__img">
+            <img src="{{ equipment.image_1_page_3.path }}" alt="" />
+          </div>
+        </div>
+        <img class="pcb2__bg" src="{{ 'assets/img/Industrial/shapeTop.svg'|theme }}" alt="" />
+      </div>
+      <div class="prom__content__Block3">
+        <div class="pcb3__img">
+          <img src="{{ equipment.image_1_page_4.path }}" alt="" />
+        </div>
+        <div class="pcb3__text">
+          <p class="secondTitle">{{ equipment.title_page_4 }}</p>
+          <p class="content__text">
+            {{ equipment.desc_page_4|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+          <span class="mainBtn">
+            <span data-slide='7'>Связаться с нами</span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        © 2021
+        <a href="https://itd.company/portfolio/">ITD Company.</a>
+        All rights reserved
+      </p>
+    </div>
+  </div>
+</section>";s:5:"mtime";i:1616777574;s:6:"markup";s:3389:"{% set equipment = equipmentList.records[0] %}
+{% set menu = menuList.records[0] %}
+
+<section class="block__wrap prom">
+  <div class="fullBlock promFullBlock">
+    <img class="logoMobil" src="{{ 'assets/img/logo.png'|theme }}" alt="">
+    <div class="fullBlock__prom__wrap">
+      <div class="fpw__text">
+        <p class="content__title">
+          {{ equipment.title_page_1 }}
+        </p>
+        <p class="content__text">
+          {{ equipment.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
+        </p>
+      </div>
+      <div class="fpw__img">
+        <img src="{{ equipment.image_1_page_1.path }}" alt="" />
+      </div>
+    </div>
+    <div class="mainTitle mainTitle__electronic">{{ menu.item_6 }}</div>
+  </div>
+  <div class="contentBlock">
+    <div class="contentBlock__prom_wrap">
+      <div class="prom__content__Block1">
+        <div class="pcb1__text">
+          <p class="secondTitle">
+            {{ equipment.title_page_2 }}
+          </p>
+          <p class="content__text">
+            {{ equipment.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+        </div>
+        <div class="pcb1__img">
+          <div class="pcb1__img__wrap">
+            <img src="{{ equipment.image_1_page_2.path }}" alt="" />
+            <img class="hexBG1" src="{{ 'assets/img/Industrial/hexBG1.png'|theme }}" alt="" />
+            <img class="hexBG2" src="{{ 'assets/img/Industrial/hexBG2.png'|theme }}" alt="" />
+            <img class="hexBG3" src="{{ 'assets/img/Industrial/hexBG3.png'|theme }}" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="prom__content__Block2">
+        <div class="pcb2__block">
+          <div class="pcb2b__text">
+            <p class="secondTitle">{{ equipment.title_1_page_3 }}</p>
+            <p class="content__text">
+              {{ equipment.desc_1_page_3|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+          <div class="pcb2b__img">
+            <img src="{{ equipment.image_1_page_3.path }}" alt="" />
+          </div>
+        </div>
+        <div class="pcb2__block">
+          <div class="pcb2b__text">
+            <p class="secondTitle">{{ equipment.title_2_page_3 }}</p>
+            <p class="content__text">
+              {{ equipment.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+          <div class="pcb2b__img">
+            <img src="{{ equipment.image_1_page_3.path }}" alt="" />
+          </div>
+        </div>
+        <img class="pcb2__bg" src="{{ 'assets/img/Industrial/shapeTop.svg'|theme }}" alt="" />
+      </div>
+      <div class="prom__content__Block3">
+        <div class="pcb3__img">
+          <img src="{{ equipment.image_1_page_4.path }}" alt="" />
+        </div>
+        <div class="pcb3__text">
+          <p class="secondTitle">{{ equipment.title_page_4 }}</p>
+          <p class="content__text">
+            {{ equipment.desc_page_4|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+          <span class="mainBtn">
+            <span data-slide='7'>Связаться с нами</span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        © 2021
+        <a href="https://itd.company/portfolio/">ITD Company.</a>
+        All rights reserved
+      </p>
+    </div>
+  </div>
+</section>";s:4:"code";N;s:25:"builderList equipmentList";a:8:{s:10:"modelClass";s:29:"Itd\Admin\Models\IndEquipment";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:12:"title_page_1";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:20:"builderList menuList";a:8:{s:10:"modelClass";s:25:"Itd\Admin\Models\MenuItem";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:6:"item_1";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

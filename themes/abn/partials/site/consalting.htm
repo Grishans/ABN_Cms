@@ -22,161 +22,168 @@ pageNumber = "{{ :page }}"
 {% set menu = menuList.records[0] %}
 
 <section class="block__wrap consulting">
-    <div class="fullBlock consulting1">
-      <div class="fullBlock__consalting__wrap">
-        <div class="fc1w__title">
-          <p class="content__title">{{ cons.title_page_1 }}</p>
+  <div class="fullBlock consulting1">
+    <img class="logoMobil" src="{{ 'assets/img/logo.png'|theme }}" alt="">
+    <div class="fullBlock__consalting__wrap">
+      <div class="fc1w__title">
+        <p class="content__title">{{ cons.title_page_1 }}</p>
+      </div>
+      <div class="fc1w__block1">
+        <div class="fc1wb__img">
+          <img src="{{ cons.image_1_page_1.path }}" alt="" />
         </div>
-        <div class="fc1w__block1">
-          <div class="fc1wb__img">
-            <img src="{{ cons.image_1_page_1.path }}" alt="" />
+        <div class="fc1wb__text">
+          <p class="content__text">
+            {{ cons.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+        </div>
+      </div>
+      <div class="fc1w__block2">
+        <div class="cpb2__block">
+          <div class="cpb2b__number">
+            <p class="content__title">1</p>
           </div>
-          <div class="fc1wb__text">
-            <p class="content__text">
-              {{ cons.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
+          <div class="cpb2b__title">
+            <p class="secondTitle">{{ cons.subtitle_1_page_1 }}</p>
+          </div>
+          <div class="cpb2b__text">
+            <p>
+              {{ cons.subdesc_1_page_1|replace({'<p>':'','</p>':''})|raw }}
             </p>
           </div>
         </div>
-        <div class="fc1w__block2">
-          <div class="cpb2__block">
-            <div class="cpb2b__number">
-              <p class="content__title">1</p>
+        <div class="cpb2__block">
+          <div class="cpb2b__number">
+            <p class="content__title">2</p>
+          </div>
+          <div class="cpb2b__title">
+            <p class="secondTitle">{{ cons.subtitle_2_page_1 }}</p>
+          </div>
+          <div class="cpb2b__text">
+            {{ cons.subdesc_2_page_1|replace({'<p>':'','</p>':''})|raw }}
+          </div>
+        </div>
+        <div class="cpb2__block">
+          <div class="cpb2b__number">
+            <p class="content__title">3</p>
+          </div>
+          <div class="cpb2b__title">
+            <p class="secondTitle">{{ cons.subtitle_3_page_1 }}</p>
+          </div>
+          <div class="cpb2b__text">
+            {{ cons.subdesc_3_page_1|replace({'<p>':'','</p>':''})|raw }}
+          </div>
+        </div>
+        <div class="color__line"></div>
+      </div>
+    </div>
+    <div class="mainTitle mainTitle__electronic">{{ menu.item_7 }}</div>
+    <div class="mainTitle mainTitle__electronic1">{{ menu.item_8 }}</div>
+  </div>
+  <div class="fullBlock consulting2">
+    <div class="fullBlock__consalting__wrap">
+      <div class="fc2w__block1">
+        <p class="content__title">
+          {{ cons.title_page_2 }}
+        </p>
+        <div class="fc2w__block__img">
+          <img src="{{ cons.image_1_page_2.path }}" alt="" />
+        </div>
+        <div class="content__text">
+          <p class="content__text">
+            {{ cons.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
+          </p>
+        </div>
+      </div>
+      <div class="fc2w__block2">
+        <div class="fc2w__block__text">
+          <div class="fc2wbt__block">
+            <div class="fc2wbt__block__img">
+              <div class="fc2wbt__block__img__wrap">
+                <img src="{{ cons.subimage_1_page_1.path }}" alt="" />
+              </div>
             </div>
-            <div class="cpb2b__title">
-              <p class="secondTitle">{{ cons.subtitle_1_page_1 }}</p>
-            </div>
-            <div class="cpb2b__text">
-              <p>
-                {{ cons.subdesc_1_page_1|replace({'<p>':'','</p>':''})|raw }}
+            <div class="fc2wbt__block__text">
+              <p class="secondTitle">{{ cons.subtitle_1_page_2 }}</p>
+              <p class="content__text">
+                {{ cons.subdesc_1_page_2|replace({'<p>':'','</p>':''})|raw }}
               </p>
             </div>
           </div>
-          <div class="cpb2__block">
-            <div class="cpb2b__number">
-              <p class="content__title">2</p>
+          <div class="fc2wbt__block">
+            <div class="fc2wbt__block__img">
+              <div class="fc2wbt__block__img__wrap">
+                <img src="{{ cons.subimage_2_page_1.path }}" alt="" />
+              </div>
             </div>
-            <div class="cpb2b__title">
-              <p class="secondTitle">{{ cons.subtitle_2_page_1 }}</p>
-            </div>
-            <div class="cpb2b__text">
-              {{ cons.subdesc_2_page_1|replace({'<p>':'','</p>':''})|raw }}
-            </div>
-          </div>
-          <div class="cpb2__block">
-            <div class="cpb2b__number">
-              <p class="content__title">3</p>
-            </div>
-            <div class="cpb2b__title">
-              <p class="secondTitle">{{ cons.subtitle_3_page_1 }}</p>
-            </div>
-            <div class="cpb2b__text">
-              {{ cons.subdesc_3_page_1|replace({'<p>':'','</p>':''})|raw }}
+            <div class="fc2wbt__block__text">
+              <p class="secondTitle">{{ cons.subtitle_2_page_2 }}</p>
+              <p class="content__text">
+                {{ cons.subdesc_2_page_2|replace({'<p>':'','</p>':''})|raw }}
+              </p>
             </div>
           </div>
-          <div class="color__line"></div>
+          <div class="fc2wbt__block">
+            <div class="fc2wbt__block__img">
+              <div class="fc2wbt__block__img__wrap">
+                <img src="{{ cons.subimage_3_page_1.path }}" alt="" />
+              </div>
+            </div>
+            <div class="fc2wbt__block__text">
+              <p class="secondTitle">{{ cons.subtitle_3_page_2 }}</p>
+              <p class="content__text">
+                {{ cons.subdesc_3_page_2|replace({'<p>':'','</p>':''})|raw }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="fc2w__block__img">
+          <img src="{{ cons.image_1_page_2.path }}" alt="" />
         </div>
       </div>
-      <div class="mainTitle mainTitle__electronic">{{ menu.item_7 }}</div>
-      <div class="mainTitle mainTitle__electronic1">{{ menu.item_8 }}</div>
     </div>
-    <div class="fullBlock consulting2">
-      <div class="fullBlock__consalting__wrap">
-        <div class="fc2w__block1">
+  </div>
+  <div class="fullBlock consulting3">
+    <div class="fullBlock__consalting__wrap">
+      <div class="fc3w__block1">
+        <div class="fc3w__block1__title">
           <p class="content__title">
-            {{ cons.title_page_2 }}
+            {{ cons.title_page_3|replace({'<p>':'','</p>':''})|raw }}
           </p>
-          <div class="content__text">
-            <p class="content__text">
-              {{ cons.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
-            </p>
-          </div>
         </div>
-        <div class="fc2w__block2">
-          <div class="fc2w__block__text">
-            <div class="fc2wbt__block">
-              <div class="fc2wbt__block__img">
-                <div class="fc2wbt__block__img__wrap">
-                  <img src="{{ cons.subimage_1_page_1.path }}" alt="" />
-                </div>
-              </div>
-              <div class="fc2wbt__block__text">
-                <p class="secondTitle">{{ cons.subtitle_1_page_2 }}</p>
-                <p class="content__text">
-                  {{ cons.subdesc_1_page_2|replace({'<p>':'','</p>':''})|raw }}
-                </p>
-              </div>
-            </div>
-            <div class="fc2wbt__block">
-              <div class="fc2wbt__block__img">
-                <div class="fc2wbt__block__img__wrap">
-                  <img src="{{ cons.subimage_2_page_1.path }}" alt="" />
-                </div>
-              </div>
-              <div class="fc2wbt__block__text">
-                <p class="secondTitle">{{ cons.subtitle_2_page_2 }}</p>
-                <p class="content__text">
-                  {{ cons.subdesc_2_page_2|replace({'<p>':'','</p>':''})|raw }}
-                </p>
-              </div>
-            </div>
-            <div class="fc2wbt__block">
-              <div class="fc2wbt__block__img">
-                <div class="fc2wbt__block__img__wrap">
-                  <img src="{{ cons.subimage_3_page_1.path }}" alt="" />
-                </div>
-              </div>
-              <div class="fc2wbt__block__text">
-                <p class="secondTitle">{{ cons.subtitle_3_page_2 }}</p>
-                <p class="content__text">
-                  {{ cons.subdesc_3_page_2|replace({'<p>':'','</p>':''})|raw }}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="fc2w__block__img">
-            <img src="{{ cons.image_1_page_2.path }}" alt="" />
-          </div>
+        <div class="fc3w__block1__img">
+          <img src="{{ cons.image_1_page_3.path }}" alt="">
+        </div>
+        <div class="fc3w__block1__text">
+          <p class="content__text">
+            {{ cons.desc_page_3|replace({'<p>':'','</p>':''})|raw }}
+          </p>
         </div>
       </div>
-    </div>
-    <div class="fullBlock consulting3">
-      <div class="fullBlock__consalting__wrap">
-        <div class="fc3w__block1">
-          <div class="fc3w__block1__title">
-            <p class="content__title">
-              {{ cons.title_page_3|replace({'<p>':'','</p>':''})|raw }}
-            </p>
-          </div>
-          <div class="fc3w__block1__img">
-            <img src="{{ cons.image_1_page_3.path }}" alt="">
-          </div>
-          <div class="fc3w__block1__text">
-            <p class="content__text">
-              {{ cons.desc_page_3|replace({'<p>':'','</p>':''})|raw }}
-            </p>
-          </div>
+      <div class="fc3w__block2">
+        <div class="fc3w__block2__block">
+          <p class="secondTitle">{{ cons.subtitle_1_page_3 }}</p>
+          <p class="content__text">{{ cons.subdesc_1_page_3|replace({'<p>':'','</p>':''})|raw }}</p>
         </div>
-        <div class="fc3w__block2">
-          <div class="fc3w__block2__block">
-            <p class="secondTitle">{{ cons.subtitle_1_page_3 }}</p>
-            <p class="content__text">{{ cons.subdesc_1_page_3|replace({'<p>':'','</p>':''})|raw }}</p>
-          </div>
-          <div class="fc3w__block2__block">
-            <p class="secondTitle">{{ cons.subtitle_2_page_3 }}</p>
-            <p class="content__text">{{ cons.subdesc_2_page_3|replace({'<p>':'','</p>':''})|raw }}</p>
-          </div>
-          <div class="fc3w__block2__block">
-            <p class="secondTitle">{{ cons.subtitle_3_page_3 }}</p>
-            <p class="content__text">{{ cons.subdesc_3_page_3|replace({'<p>':'','</p>':''})|raw }}</p>
-          </div>
+        <div class="fc3w__block2__block">
+          <p class="secondTitle">{{ cons.subtitle_2_page_3 }}</p>
+          <p class="content__text">{{ cons.subdesc_2_page_3|replace({'<p>':'','</p>':''})|raw }}</p>
+        </div>
+        <div class="fc3w__block2__block">
+          <p class="secondTitle">{{ cons.subtitle_3_page_3 }}</p>
+          <p class="content__text">{{ cons.subdesc_3_page_3|replace({'<p>':'','</p>':''})|raw }}</p>
         </div>
       </div>
+      <span class="mainBtn">
+        <span data-slide='7'>Связаться с нами</span>
+      </span>
     </div>
-    <div class="footer footer_consulting">
-      <p>
-        © 2021
-        <a href="https://itd.company/portfolio/">ITD Company.</a> All
-        rights reserved
-      </p>
-    </div>
-  </section>
+  </div>
+  <div class="footer footer_consulting">
+    <p>
+      © 2021
+      <a href="https://itd.company/portfolio/">ITD Company.</a> All
+      rights reserved
+    </p>
+  </div>
+</section>

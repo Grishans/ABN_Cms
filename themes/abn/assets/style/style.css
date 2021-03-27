@@ -96,7 +96,7 @@ body {
   position: relative;
   color: #355070;
   width: 100%;
-  margin-bottom: 100%;
+  margin-bottom: 20%;
 }
 .mainDots span {
   position: absolute;
@@ -488,15 +488,12 @@ section.electronics .contentBlock {
   right: -25%;
 }
 img.fullBlock__bg {
-  position: absolute;
-  top: 25%;
-  left: 2%;
   width: 50%;
 }
 
 .fullBlock__electroinic__wrap {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
   padding-top: 15%;
 }
@@ -513,11 +510,13 @@ img.fullBlock__bg {
   display: flex;
   flex-direction: column;
 }
-.contentBlock__electronics__wrap p.content__title {
+.contentBlock__electronics__wrap p.secondTitle {
+  position: relative;
+  z-index: 2;
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 160px;
+  margin-bottom: 40px;
 }
 .contentBlock__electronic__block1 {
   position: relative;
@@ -530,10 +529,8 @@ img.fullBlock__bg {
   margin-bottom: 140px;
 }
 .electronic__bg1 {
-  position: absolute;
-  left: -4%;
-  top: -3%;
   width: 50%;
+  transform: translate(-9%,-40%);
 }
 .electronic__bg1__wrap {
   display: flex;
@@ -556,19 +553,22 @@ img.fullBlock__bg {
   width: 100%;
   margin: 0;
 }
+.ceb1__wraps{
+  display: flex;
+}
 .ceb1__wrap {
   position: relative;
-  width: 35%;
+  width: 45%;
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
-  margin-right: 20%;
+  margin-right: 10%;
   z-index: 2;
 }
 .cew__text p.content__title {
   margin: 0;
   text-align: left;
   margin-bottom: 33px;
+  margin-top: 60px;
 }
 p.content__text {
   font-size: 18px;
@@ -602,6 +602,7 @@ p.content__text {
   font-size: 18px;
 }
 .contentBlock__electronic__block3 {
+  display: flex;
   position: relative;
   margin-bottom: 30px;
 }
@@ -624,9 +625,7 @@ p.content__text {
   margin-bottom: 85px;
 }
 .electronic__bg2 {
-  position: absolute;
-  right: 0;
-  bottom: -10%;
+  width: 45%;
 }
 .electronic__bg2__wrap {
   position: relative;
@@ -637,7 +636,7 @@ p.content__text {
   height: 100%;
 }
 .electronic__bg2__wrap img {
-  margin-top: 25%;
+  width: 100%;
 }
 .electronic__bg2__wrap img.electronic__bg2__cube {
   position: absolute;
@@ -645,10 +644,15 @@ p.content__text {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  height: 100%;
 }
 /*/Electronics/*/
 
 /*products*/
+.cpb3__img__mobil{
+  display: none !important;
+}
 section.products {
   display: flex;
   flex-direction: column;
@@ -695,6 +699,7 @@ section.products {
 }
 .cpb__bg img {
   object-fit: contain;
+  width: 24%;
 }
 img.cpb__bg1 {
   position: absolute;
@@ -707,7 +712,7 @@ img.cpb__bg1 {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
 }
 .cpb2__block {
   position: relative;
@@ -792,6 +797,7 @@ img.block2__bg {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 25px;
 }
 
 .cpb3b__text {
@@ -928,6 +934,7 @@ img.pcb2__bg {
   padding: 0 7% 0 5%;
   box-sizing: border-box;
   z-index: 2;
+  margin-top: 15%;
 }
 .pcb3__img {
   width: 430px;
@@ -941,7 +948,7 @@ img.pcb2__bg {
   transform: translateY(-20%);
 }
 .pcb3__text {
-  width: 58%;
+  width: 50%;
 }
 .pcb3__text p.content__text {
   margin-bottom: 80px;
@@ -1029,6 +1036,9 @@ section.consulting {
   width: 70%;
   margin-bottom: 35px;
 }
+.fc2w__block1 .fc2w__block__img{
+  display: none;
+}
 .fc2w__block1 p.content__title {
   margin-bottom: 33px;
 }
@@ -1074,7 +1084,6 @@ section.consulting {
 }
 .fc2w__block__img img {
   width: 100%;
-  height: 100%;
 }
 .fc2w__block__img {
   transform: translateY(-100px);
@@ -1120,6 +1129,9 @@ section.consulting {
 }
 .fc3w__block2__block {
   width: 28%;
+}
+.fullBlock__consalting__wrap .mainBtn{
+  display: none;
 }
 /*/Consulting/*/
 
@@ -1199,6 +1211,10 @@ section.consulting {
   flex-direction: column;
   width: 50%;
 }
+.map__wrap{
+  width: 100%;
+  height: 100%;
+}
 .map__contact {
   display: flex;
   margin-top: 25px;
@@ -1269,7 +1285,7 @@ a.errorHomeHref {
 /*/404/*/
 
 .logoMobil, .mobilNavTrigger{
-  display: none;
+  display: none !important;
 }
 
 /*Adaptation*/
@@ -1292,7 +1308,7 @@ a.errorHomeHref {
 .mobilNavTrigger{
   position: absolute;
   top: 0;
-  display:flex;
+  display:flex !important;
   justify-content: center;
   align-items: center;
   right: 0;
@@ -1321,12 +1337,29 @@ img.mobilNavCross{
 .sidebar__sn a img{
   width: 100%;
 }
+.mainDots{
+  margin-bottom: 20px;
+}
 .mainDots ul.slick-dots li a.pager__item{
   font-size: 24px;
 }
 .mainDots span{
   font-size: 24px;
   font-weight: 500;
+}
+.sl__wrap{
+  width: 50%;
+}
+.sl__wrap a{
+  font-size: 24px;
+}
+.sl__wrap__swith{
+  width: 70px;
+  height: 30px;
+}
+.sl__wrap__swith_trigger{
+  width: 25px;
+  height: 20px;
 }
 /*/Sidebar/*/
 
@@ -1349,7 +1382,7 @@ p.secondTitle{
   margin-left: 35px;
 }
 .logoMobil{
-  display: block;
+  display: block !important;
   width: 50%;
   margin-top: 10%;
   margin-left: 10%;
@@ -1465,5 +1498,540 @@ p.secondTitle{
   align-self: unset;
 }
 /*/textile/*/
+
+/*electronic*/
+.fullBlock__electroinic__wrap{
+  justify-content: unset;
+  flex-direction: column;
+}
+img.fullBlock__bg{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.few__block{
+  width: 100%;
+}
+.contentBlock__electronics__wrap{
+  margin-top: 30px;
+}
+.ceb1__wraps{
+  flex-direction: column;
+}
+.electronic__bg1{
+  width: 100%;
+}
+.electronic__bg1__wrap img.electronic__bg1__cube{
+  display: none;
+}
+.ceb1__wrap{
+  width: 100%;
+}
+.electronic__bg1{
+  transform: unset;
+}
+.electronic__bg1__wrap img{
+  margin-top: 0;
+}
+.cew__text p.content__title{
+  text-align: center;
+}
+.ceb2w__block img {
+ width: 60%;
+ margin: 0 auto;
+}
+.ceb2__wrap .slick-dots{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.ceb2__wrap .slick-dots li{
+  list-style-type: none;
+  background: #C4C4C4;
+  border: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  outline: none;
+}
+.ceb2__wrap .slick-dots li button{
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+}
+.ceb2__wrap .slick-dots li button:focus{
+  outline: none;
+}
+.ceb2__wrap .slick-dots li.slick-active{
+  background: var(--orange);
+  border: none;
+}
+.contentBlock__electronic__block3{
+  display: flex;
+  flex-direction: column;
+}
+.cwb3__wrap{
+  width: 100%;
+  order: 2;
+}
+.cwb3__wrap .mainBtn{
+  margin: 0 auto;
+}
+.electronic__bg2{
+  order: 1;
+  width: 100%;
+}
+.contentBlock__electronic__block3 .electronic__bg2__wrap img{
+  width: 90%;
+}
+.contentBlock__electronic__block3 .electronic__bg2__wrap img.electronic__bg2__cube{
+  display: none !important;
+}
+.pcb2__bg{
+  display: none !important;
+}
+/*/electronic/*/
+
+/*products*/
+.cpb3__img__mobil{
+  display: none;
+}
+.fullBlock__products__wrap{
+  flex-direction: column;
+}
+.fpw__text{
+  width: 100%;
+  order: 2;
+}
+.fpw__img{
+  width: 100%;
+  order: 1;
+}
+.cpb__text{
+  width: 100%;
+  margin-top: 90%;
+  margin-bottom: 170%;
+}
+.img.cpb__bg1{
+  display: none !important;
+}
+.cpb__bg{
+  flex-direction: column;
+  top: -110%;
+}
+.cpb__bg img{
+  width: 80%;
+}
+.cpb__bg img:first-child{
+  margin-bottom: 80%;
+}
+.cpb__bg img:nth-child(2){
+  transform: translateX(30%);
+}
+.cpb__text p.content__text{
+  width: 100%;
+}
+.color__line{
+  display: none !important;
+}
+img.block2__bg{
+  display: none !important;
+}
+.cpb2b__number{
+  margin: 0 auto;
+}
+.cpb2b__title .secondTitle{
+  text-align: center;
+}
+.fc1w__block2 .cpb2__block .cpb2b__text p{
+  font-size: 18px;
+  font-weight: 400;
+}
+.content__product__block2 .slick-dots{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.content__product__block2 .slick-dots li{
+  list-style-type: none;
+  background: #C4C4C4;
+  border: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  outline: none;
+}
+.content__product__block2 .slick-dots li button{
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+}
+.content__product__block2 .slick-dots li button:focus{
+  outline: none;
+}
+.content__product__block2 .slick-dots li.slick-active{
+  background: var(--blue);
+  border: none;
+}
+.block3__bg{
+  display: none !important;
+}
+.cpb3__img__mobil{
+  display: block;
+  width: 97%;
+  margin-bottom: 40px;
+}
+.cpb3b__img{
+  display: none;
+}
+.cpb3b__text{
+  width: 100%;
+}
+.cpb3__block__title{
+  width: 100%;
+}
+.cpb3__block__btn{
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/*/products/*/
+
+/*electronic*/
+.mainTitle__electronic{
+  display: none;
+}
+.promFullBlock{
+  display: flex;
+  flex-direction: column;
+}
+.fullBlock__prom__wrap{
+  flex-direction: column;
+}
+.fpw__img{
+  margin-bottom: 40px;
+}
+.contentBlock__prom_wrap{
+  display: flex;
+  flex-direction: column;
+}
+.prom__content__Block1{
+  flex-direction: column;
+}
+.pcb1__text{
+  width: 100%;
+  order: 2;
+}
+.pcb1__img{
+  width: 100%;
+  order: 1;
+}
+.pcb1__img__wrap{
+  width: 100%;
+}
+.pcb1__img__wrap img{
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+}
+.hexBG1, .hexBG2, .hexBG3{
+  display: none !important;
+}
+.pcb2__block{
+  display: flex !important;
+  flex-direction: column;
+}
+.pcb2b__text{
+  width: 100%;
+  order: 2;
+}
+.pcb2b__img{
+  width: 200px;
+  height: 200px;
+  order: 1;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.prom__content__Block2{
+  width: 100%;
+}
+.contentBlock__prom_wrap .slick-dots{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+}
+.contentBlock__prom_wrap .slick-dots li{
+  list-style-type: none;
+  background: #C4C4C4;
+  border: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  outline: none;
+}
+.contentBlock__prom_wrap .slick-dots li button{
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+}
+.contentBlock__prom_wrap .slick-dots li button:focus{
+  outline: none;
+}
+.contentBlock__prom_wrap .slick-dots li.slick-active{
+  background: var(--blue);
+  border: none;
+}
+.pcb2__block{
+  margin: 0;
+}
+.prom__content__Block3{
+  flex-direction: column;
+  justify-content: unset;
+}
+.pcb3__img{
+  width: 320px;
+  height: 320px;
+}
+.pcb3__text{
+  width: 100%;
+}
+.pcb3__img img{
+  transform: unset;
+  width: 100%;
+  height: 100%;
+}
+.prom__content__Block2{
+  margin-bottom: 100px;
+}
+/*/electronic/*/
+
+/*cunsalting*/
+.consulting1{
+  display: flex;
+  flex-direction: column;
+}
+.fullBlock__consalting__wrap{
+  display: flex;
+  flex-direction: column;
+}
+.fullBlock__consalting__wrap .mainBtn{
+  display: block;
+}
+.fc1w__block1{
+  flex-direction: column;
+  justify-content: unset;
+}
+.fc1w__title{
+  margin-top: 40px;
+}
+.fc1wb__img{
+  width: 100%;
+  margin-bottom: 40px;
+}
+.fc1wb__text{
+  width: 100%;
+}
+.fc1w__block2{
+  width: 100%;
+}
+.fc1w__block2 .slick-dots{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+}
+.fc1w__block2 .slick-dots li{
+  list-style-type: none;
+  background: #C4C4C4;
+  border: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  outline: none;
+}
+.fc1w__block2 .slick-dots li button{
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+}
+.fc1w__block2 .slick-dots li button:focus{
+  outline: none;
+}
+.fc1w__block2 .slick-dots li.slick-active{
+  background: var(--blue);
+  border: none;
+}
+.fc2w__block1 .fc2w__block__img{
+  display: block;
+  width: 100%;
+  transform: unset;
+  margin: 40px 0;
+}
+.fc2w__block1{
+  width: 100%;
+  margin-bottom: 60px;
+}
+.content__text p.content__text{
+  width: 100%;
+}
+.fc2w__block2 .fc2w__block__img{
+  display: none;
+}
+.fc2w__block__text{
+  width: 100%;
+}
+.fc2w__block__text .slick-dots{
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+}
+.fc2w__block__text .slick-dots li{
+  list-style-type: none;
+  background: #C4C4C4;
+  border: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  outline: none;
+}
+.fc2w__block__text .slick-dots li button{
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+}
+.fc2w__block__text .slick-dots li button:focus{
+  outline: none;
+}
+.fc2w__block__text .slick-dots li.slick-active{
+  background: var(--blue);
+  border: none;
+}
+.fc2wbt__block__img__wrap{
+  margin: 0 auto;
+}
+.fc2wbt__block__text p.secondTitle{
+  text-align: center;
+}
+.fc2wbt__block__text p.content__text{
+  font-size: 18px;
+}
+.consulting3{
+  padding: 0;
+}
+.fc3w__block1 .fc3w__block1__title{
+  width: 100%;
+}
+.fc3w__block2{
+  flex-direction: column;
+  justify-content: unset;
+}
+.fc3w__block2__block{
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.fullBlock__consalting__wrap .mainBtn{
+  margin: 0 auto;
+}
+/*/cunsalting/*/
+
+/*contacts*/
+.mainTitle__electronic{
+  display: none;
+}
+.fullBlock__contacts__wrap{
+  display: flex;
+  flex-direction: column;
+}
+.fcw__form{
+  width: 98%;
+  margin-bottom: 100px;
+}
+.fcw__map{
+  width: 100%;
+}
+.map__wrap{
+  height: 320px;
+}
+.fullBlock__contacts{
+  min-height: unset;
+  max-height: unset;
+}
+.map__contact{
+  flex-direction: column;
+  width: 100%;
+}
+.mc__block{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+/*/contacts/*/
+}
+
+@media (min-width: 370px) and (max-width: 380px) and (min-height: 800px) and (max-height: 820px){
+  .cpb__bg img:first-child{
+    margin-bottom: 130%;
+  }
+  .pcb1__img__wrap img{
+    height: 70%;
+  }
+  .pcb3__img img{
+    width: 95%;
+    height: 95%;
+  }
+}
+
+@media (max-width: 380px){
+p.content__title{
+  font-size: 16px;
+}
+.fullBlock{
+  max-height: unset;
+  min-height: unset;
+}
+p.content__text{
+  font-size: 12px;
+}
+.cpb__bg img{
+  width: 50%;
+}
+.cpb__bg img:first-child{
+  margin-bottom: 45%;
+}
+.cpb__text{
+  margin-top: 60%;
+  margin-bottom: 100%;
+}
+.sideBarActive{
+  overflow-y: scroll;
+}
+}
+@media (min-height: 650px) and (max-height: 740px){
+  p.content__title{
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 418px) and (min-height: 735px) and (max-height: 740px){
+  .cpb__bg img{
+    width: 60%;
+  }
 }
 /*/Adaptation/*/

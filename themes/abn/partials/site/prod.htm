@@ -22,122 +22,111 @@ pageNumber = "{{ :page }}"
 {% set menu = menuList.records[0] %}
 
 <section class="block__wrap products">
-    <div class="fullBlock">
-      <div class="fullBlock__products__wrap">
-        <div class="fpw__text">
+  <div class="fullBlock">
+    <img class="logoMobil" src="{{ 'assets/img/logo.png'|theme }}" alt="">
+    <div class="fullBlock__products__wrap">
+      <div class="fpw__text">
+        <p class="content__title">
+          {{ prod.title_page_1 }}
+        </p>
+        <p class="content__text">
+          {{ prod.desc_page_1 }}
+        </p>
+      </div>
+      <div class="fpw__img">
+        <img src="{{ prod.image_1_page_1.path }}" alt="" />
+      </div>
+    </div>
+    <div class="mainTitle mainTitle__electronic">{{ menu.item_5 }}</div>
+    <div class="mainTitle mainTitle__electronic1">{{ menu.item_6 }}</div>
+  </div>
+  <div class="contentBlock">
+    <div class="contentBlock__products__wrap">
+      <div class="content__product__block1">
+        <div class="cpb__text">
           <p class="content__title">
-            {{ prod.title_page_1 }}
+            {{ prod.title_page_2 }}
           </p>
           <p class="content__text">
-            {{ prod.desc_page_1 }}
+            {{ prod.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
           </p>
         </div>
-        <div class="fpw__img">
-          <img src="{{ prod.image_1_page_1.path }}" alt="" />
+        <div class="cpb__bg">
+          <img src="{{ prod.image_1_page_2.path }}" alt="" />
+          <img src="{{ prod.image_2_page_2.path }}" alt="" />
+          <img src="{{ prod.image_3_page_2.path }}" alt="" />
         </div>
+        <img class="cpb__bg1" src="{{ 'assets/img/Food/infoBoobleCenter.svg'|theme }}" alt="" />
       </div>
-      <div class="mainTitle mainTitle__electronic">{{ menu.item_5 }}</div>
-      <div class="mainTitle mainTitle__electronic1">{{ menu.item_6 }}</div>
-    </div>
-    <div class="contentBlock">
-      <div class="contentBlock__products__wrap">
-        <div class="content__product__block1">
-          <div class="cpb__text">
-            <p class="content__title">
-              {{ prod.title_page_2 }}
-            </p>
-            <p class="content__text">
-              {{ prod.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+      <div class="content__product__block2">
+        <div class="cpb2__block">
+          <div class="cpb2b__number">
+            <p class="content__title">1</p>
           </div>
-          <div class="cpb__bg">
-            <img src="{{ prod.image_1_page_2.path }}" alt="" />
-            <img src="{{ prod.image_2_page_2.path }}" alt="" />
-            <img src="{{ prod.image_3_page_2.path }}" alt="" />
+          <div class="cpb2b__title">
+            <p class="secondTitle">{{ prod.title_1_page_3 }}</p>
           </div>
-          <img
-            class="cpb__bg1"
-            src="{{ 'assets/img/Food/infoBoobleCenter.svg'|theme }}"
-            alt=""
-          />
-        </div>
-        <div class="content__product__block2">
-          <div class="cpb2__block">
-            <div class="cpb2b__number">
-              <p class="content__title">1</p>
-            </div>
-            <div class="cpb2b__title">
-              <p class="secondTitle">{{ prod.title_1_page_3 }}</p>
-            </div>
-            <div class="cpb2b__text">
-                {{ prod.desc_1_page_3|raw }}
-            </div>
-          </div>
-          <div class="cpb2__block">
-            <div class="cpb2b__number">
-              <p class="content__title">2</p>
-            </div>
-            <div class="cpb2b__title">
-              <p class="secondTitle">{{ prod.title_2_page_3 }}</p>
-            </div>
-            <div class="cpb2b__text">
-              <p>
-                {{ prod.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
-              </p>
-            </div>
-          </div>
-          <div class="cpb2__block">
-            <div class="cpb2b__number">
-              <p class="content__title">3</p>
-            </div>
-            <div class="cpb2b__title">
-              <p class="secondTitle">{{ prod.title_3_page_3 }}</p>
-            </div>
-            <div class="cpb2b__text">
-              <p>
-                {{ prod.desc_3_page_3|replace({'<p>':'','</p>':''})|raw }}
-              </p>
-            </div>
-          </div>
-          <div class="color__line"></div>
-          <img
-            class="block2__bg"
-            src="{{ 'assets/img/Food/infoBoobleCenter.svg'|theme }}"
-            alt=""
-          />
-        </div>
-        <div class="content__product__block3">
-          <div class="cpb3__block__title">
-            <p class="content__title">
-              {{ prod.title_page_4 }}
-            </p>
-          </div>
-          <div class="cpb3__block__textImg">
-            <div class="cpb3b__text">
-              {{ prod.desc_page_4|raw }}
-            </div>
-            <div class="cpb3b__img">
-              <img src="{{ prod.image_1_page_4.path }}" alt="" />
-              <img
-                class="block3__bg"
-                src="{{ 'assets/img/Food//infoBoobleBottom.svg'|theme }}"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="cpb3__block__btn">
-            <span class="mainBtn">
-              <span>Связаться с нами</span>
-            </span>
+          <div class="cpb2b__text">
+            {{ prod.desc_1_page_3|raw }}
           </div>
         </div>
-        <div class="footer">
-          <p>
-            © 2021
-            <a href="https://itd.company/portfolio/">ITD Company. </a
-            >All rights reserved
+        <div class="cpb2__block">
+          <div class="cpb2b__number">
+            <p class="content__title">2</p>
+          </div>
+          <div class="cpb2b__title">
+            <p class="secondTitle">{{ prod.title_2_page_3 }}</p>
+          </div>
+          <div class="cpb2b__text">
+            <p>
+              {{ prod.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+        </div>
+        <div class="cpb2__block">
+          <div class="cpb2b__number">
+            <p class="content__title">3</p>
+          </div>
+          <div class="cpb2b__title">
+            <p class="secondTitle">{{ prod.title_3_page_3 }}</p>
+          </div>
+          <div class="cpb2b__text">
+            <p>
+              {{ prod.desc_3_page_3|replace({'<p>':'','</p>':''})|raw }}
+            </p>
+          </div>
+        </div>
+        <div class="color__line"></div>
+        <img class="block2__bg" src="{{ 'assets/img/Food/infoBoobleCenter.svg'|theme }}" alt="" />
+      </div>
+      <div class="content__product__block3">
+        <img class="cpb3__img__mobil" src="{{ prod.image_1_page_4.path }}" alt="" />
+        <div class="cpb3__block__title">
+          <p class="secondTitle">
+            {{ prod.title_page_4 }}
           </p>
         </div>
+        <div class="cpb3__block__textImg">
+          <div class="cpb3b__text">
+            {{ prod.desc_page_4|raw }}
+          </div>
+          <div class="cpb3b__img">
+            <img src="{{ prod.image_1_page_4.path }}" alt="" />
+            <img class="block3__bg" src="{{ 'assets/img/Food//infoBoobleBottom.svg'|theme }}" alt="" />
+          </div>
+        </div>
+        <div class="cpb3__block__btn">
+          <span class="mainBtn">
+            <span data-slide='7'>Связаться с нами</span>
+          </span>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          © 2021
+          <a href="https://itd.company/portfolio/">ITD Company. </a>All rights reserved
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
