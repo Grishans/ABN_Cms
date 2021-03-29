@@ -25,7 +25,7 @@ pageNumber = "{{ :page }}"
   <div class="fullBlock">
     <img class="logoMobil" src="{{ 'assets/img/logo.png'|theme }}" alt="">
     <div class="fullBlock__electroinic__wrap">
-      <img class="fullBlock__bg" src="{{ electronic.image_1_page_1.path }}" alt="" />
+      <img class="fullBlock__bg" src="{{ electronic.image_1_page_1.thumb(800, 500, {mode:'auto', quality:85}) }}" alt="" />
       <div class="few__block">
         <p class="content__title">
           {{ electronic.title_page_1 }}
@@ -49,7 +49,7 @@ pageNumber = "{{ :page }}"
           <div class="electronic__bg1">
             <div class="electronic__bg1__wrap">
               <img class="electronic__bg1__cube" src="{{ 'assets/img/Electronic/cube.png'|theme }}" alt="" />
-              <img src="{{ electronic.image_1_page_2.path }}" alt="" />
+              <img src="{{ electronic.image_1_page_2.thumb(630, 360, {mode:'auto', quality:85}) }}" alt="" />
             </div>
           </div>
           <div class="ceb1__wrap">
@@ -65,21 +65,21 @@ pageNumber = "{{ :page }}"
       <div class="contentBlock__electronic__block2">
         <div class="ceb2__wrap">
           <div class="ceb2w__block">
-            <img src="{{ electronic.image_1_page_3.path }}" alt="" />
+            <img src="{{ electronic.image_1_page_3.thumb(180, 180, {mode:'auto', quality:85}) }}" alt="" />
             <p class="secondTitle">{{ electronic.title_1_page_3 }}</p>
             <p class="text">
               {{ electronic.desc_1_page_3|replace({'<p>':'','</p>':''})|raw }}
             </p>
           </div>
           <div class="ceb2w__block">
-            <img src="{{ electronic.image_2_page_3.path }}" alt="" />
+            <img src="{{ electronic.image_2_page_3.thumb(180, 180, {mode:'auto', quality:85}) }}" alt="" />
             <p class="secondTitle">{{ electronic.title_2_page_3 }}</p>
             <p class="text">
               {{ electronic.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
             </p>
           </div>
           <div class="ceb2w__block">
-            <img src="{{ electronic.image_3_page_3.path }}" alt="" />
+            <img src="{{ electronic.image_3_page_3.thumb(180, 180, {mode:'auto', quality:85}) }}" alt="" />
             <p class="secondTitle">{{ electronic.title_3_page_3 }}</p>
             <p class="text">
               {{ electronic.desc_3_page_3|replace({'<p>':'','</p>':''})|raw }}
@@ -100,7 +100,7 @@ pageNumber = "{{ :page }}"
         <div class="electronic__bg2">
           <div class="electronic__bg2__wrap">
             <img class="electronic__bg2__cube" src="{{ 'assets/img/Electronic/cube.png'|theme }}" alt="" />
-            <img src="{{ electronic.image_1_page_4.path }}" alt="" />
+            <img src="{{ electronic.image_1_page_4.thumb(750, 650, {mode:'auto', quality:85}) }}" alt="" />
           </div>
         </div>
       </div>
