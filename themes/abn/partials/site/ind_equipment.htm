@@ -29,9 +29,7 @@ pageNumber = "{{ :page }}"
         <p class="content__title">
           {{ equipment.title_page_1 }}
         </p>
-        <p class="content__text">
-          {{ equipment.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
-        </p>
+          {{ equipment.desc_page_1|replace({'<p>':'<p class="content__text">'})|raw }}
       </div>
       <div class="fpw__img">
         <img src="{{ equipment.image_1_page_1.thumb(950, 500, {mode:'auto', quality:85}) }}" alt="" />
@@ -43,12 +41,10 @@ pageNumber = "{{ :page }}"
     <div class="contentBlock__prom_wrap">
       <div class="prom__content__Block1">
         <div class="pcb1__text">
-          <p class="secondTitle">
+          <p class="content__title">
             {{ equipment.title_page_2 }}
           </p>
-          <p class="content__text">
-            {{ equipment.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
-          </p>
+            {{ equipment.desc_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
         </div>
         <div class="pcb1__img">
           <div class="pcb1__img__wrap">
@@ -63,9 +59,7 @@ pageNumber = "{{ :page }}"
         <div class="pcb2__block">
           <div class="pcb2b__text">
             <p class="secondTitle">{{ equipment.title_1_page_3 }}</p>
-            <p class="content__text">
-              {{ equipment.desc_1_page_3|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+              {{ equipment.desc_1_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
           <div class="pcb2b__img">
             <img src="{{ equipment.image_1_page_3.thumb(110, 100, {mode:'auto', quality:85}) }}" alt="" />
@@ -74,12 +68,10 @@ pageNumber = "{{ :page }}"
         <div class="pcb2__block">
           <div class="pcb2b__text">
             <p class="secondTitle">{{ equipment.title_2_page_3 }}</p>
-            <p class="content__text">
-              {{ equipment.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+              {{ equipment.desc_2_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
           <div class="pcb2b__img">
-            <img src="{{ equipment.image_1_page_3.thumb(110, 100, {mode:'auto', quality:85}) }}" alt="" />
+            <img src="{{ equipment.image_2_page_3.thumb(110, 100, {mode:'auto', quality:85}) }}" alt="" />
           </div>
         </div>
         <img class="pcb2__bg" src="{{ 'assets/img/Industrial/shapeTop.svg'|theme }}" alt="" />
@@ -90,9 +82,7 @@ pageNumber = "{{ :page }}"
         </div>
         <div class="pcb3__text">
           <p class="secondTitle">{{ equipment.title_page_4 }}</p>
-          <p class="content__text">
-            {{ equipment.desc_page_4|replace({'<p>':'','</p>':''})|raw }}
-          </p>
+            {{ equipment.desc_page_4|replace({'<p>':'<p class="content__text">'})|raw }}
           <span class="mainBtn">
             <span data-slide='7'>Связаться с нами</span>
           </span>

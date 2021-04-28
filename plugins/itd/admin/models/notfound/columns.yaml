@@ -1,0 +1,7 @@
+columns:
+    title:
+        label: 'itd.admin::lang.not_found.title'
+        type: text
+    desc:
+        label: 'itd.admin::lang.not_found.desc'
+        type: text

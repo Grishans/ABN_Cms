@@ -29,9 +29,7 @@ pageNumber = "{{ :page }}"
         <p class="content__title">
           {{ textile.title_page_1 }}
         </p>
-        <p class="content__text">
-          {{ textile.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
-        </p>
+          {{ textile.desc_page_1|replace({'<p>':'<p class="content__text">'})|raw }}
       </div>
       <div class="ftw__img">
         <img src="{{ 'assets/img/Textile/textileVectorTop.png'|theme }}" alt="" />
@@ -43,42 +41,34 @@ pageNumber = "{{ :page }}"
   <div class="contentBlock">
     <div class="contentBlock__textile__wrap">
       <div class="ctw__block1">
-        <img class="textile__block1__bg" src="{{ 'assets/img/Textile/ellipseInfoTop.png'|theme }}" alt="" />
+        <img class="textile__block1__bg" src="{{ textile.image_1_page_2.thumb(600, 600, {mode:'auto', quality:85}) }}" alt="" />
         <div class="ctwb1__text">
-          <p class="secondTitle">
+          <p class="content__title">
             {{ textile.title_page_2 }}
           </p>
-          <p class="content__text">
-            {{ textile.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
-          </p>
+            {{ textile.desc_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
         </div>
       </div>
       <div class="ctw__block2">
         <div class="ctw__block2__wrap">
           <div class="ctw__block2__box">
-            <p class="content__title">{{ textile.subtitle_1_page_2 }}</p>
-            <p class="content__text">
-              {{ textile.subdesc_1_page_2|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+            <p class="secondTitle">{{ textile.subtitle_1_page_2 }}</p>
+              {{ textile.subdesc_1_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
           <div class="ctw__block2__box">
-            <p class="content__title">{{ textile.subtitle_2_page_2 }}</p>
-            <p class="content__text">
-              {{ textile.subdesc_2_page_2|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+            <p class="secondTitle">{{ textile.subtitle_2_page_2 }}</p>
+              {{ textile.subdesc_2_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
           <div class="ctw__block2__box">
-            <p class="content__title">{{ textile.subtitle_3_page_2 }}</p>
-            <p class="content__text">
-              {{ textile.subdesc_3_page_2|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+            <p class="secondTitle">{{ textile.subtitle_3_page_2 }}</p>
+              {{ textile.subdesc_3_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
           <span class="mainBtn">
             <span data-slide='7'>Связаться с нами</span>
           </span>
         </div>
 
-        <img class="textile__block2__bg1" src="{{ 'assets/img/Textile/ellipseInfoRightCenter.png'|theme }}" alt="" />
+        <img class="textile__block2__bg1" src="{{ textile.image_2_page_2.thumb(600, 600, {mode:'auto', quality:85}) }}" alt="" />
       </div>
       <div class="footer">
         <p>

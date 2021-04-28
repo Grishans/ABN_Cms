@@ -32,6 +32,8 @@ pageNumber = "{{ :page }}"
 
 [localePicker]
 forceUrl = 0
+
+[feedbackform]
 ==
 {% set menu = menuList.records[0] %}
 {% set social = socialList.records %}
@@ -121,34 +123,22 @@ forceUrl = 0
               <div class="fullBlock__contacts__wrap">
                 <div class="fcw__form">
                   <p class="content__title">{{ contact.name_form }}</p>
-                  <form action="">
+                  
+                    {% component 'feedbackform' field_1='sss' %}
 
-                    <label for="formName">{{ contact.field_1 }} <p>*</p></label>
-                    <input type="text" id="formName">
-
-                    <label for="formEmail">{{ contact.field_2 }} <p>*</p></label>
-                    <input type="text" id="formEmail">
-
-                    <label for="formText">{{ contact.field_3 }}</label>
-                    <textarea id="formText" cols="30" rows="10"></textarea>
-
-                    <span class="mainBtn">
-                      <input type="submit" value="{{ contact.text_send_btn }}" id="formBtn">
-                    </span>
-
-
-                  </form>
                 </div>
                 <div class="fcw__map">
                   <div class="map__wrap">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.8080268264566!2d-9.157220776078441!3d38.74516731944253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331acf68cb01%3A0x52d9238e53b71ae!2zUi4gQ3Jpc3TDs3bDo28gRmlndWVpcmVkbyA1LCAxNjAwLTE4NSBMaXNib2EsINCf0L7RgNGC0YPQs9Cw0LvQuNGP!5e0!3m2!1sru!2sua!4v1616576167709!5m2!1sru!2sua"
-                      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d777.8785207402686!2d-9.206600258540224!3d38.75191145778305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecd20d341398f%3A0x92b5fc602b3934c5!2zUi4gRHIuIEZpZ3VlaXJlZG8gNSwgTGlzYm9hLCDQn9C-0YDRgtGD0LPQsNC70LjRjw!5e0!3m2!1sru!2sua!4v1617636205295!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   </div>
                   <div class="map__contact">
                     <div class="mc__block">
                       <img src="{{ 'assets/img/Contacts/Geo.svg'|theme }}" alt="">
                       <p>{{ contact.address }}</p>
+                    </div>
+                    <div class="mc__block">
+                      <img src="{{ 'assets/img/Contacts/Phone.svg'|theme }}" alt="">
+                      <p>{{ contact.phone_1 }}</p>
                     </div>
                     <div class="mc__block">
                       <img src="{{ 'assets/img/Contacts/Mail.svg'|theme }}" alt="">

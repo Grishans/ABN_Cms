@@ -1,0 +1,10 @@
+name: NotFoundController
+modelClass: Itd\Admin\Models\NotFound
+form: $/itd/admin/models/notfound/fields.yaml
+defaultRedirect: itd/admin/notfoundcontroller
+create:
+    redirect: 'itd/admin/notfoundcontroller/update/:id'
+    redirectClose: itd/admin/notfoundcontroller
+update:
+    redirect: itd/admin/notfoundcontroller
+    redirectClose: itd/admin/notfoundcontroller

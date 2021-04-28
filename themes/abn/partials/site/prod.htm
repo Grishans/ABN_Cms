@@ -29,9 +29,7 @@ pageNumber = "{{ :page }}"
         <p class="content__title">
           {{ prod.title_page_1 }}
         </p>
-        <p class="content__text">
-          {{ prod.desc_page_1 }}
-        </p>
+          {{ prod.desc_page_1|replace({'<p>':'<p class="content__text">'})|raw }}
       </div>
       <div class="fpw__img">
         <img src="{{ prod.image_1_page_1.path }}" alt="" />
@@ -47,9 +45,7 @@ pageNumber = "{{ :page }}"
           <p class="content__title">
             {{ prod.title_page_2 }}
           </p>
-          <p class="content__text">
-            {{ prod.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
-          </p>
+            {{ prod.desc_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
         </div>
         <div class="cpb__bg">
           <img src="{{ prod.image_1_page_2.path }}" alt="" />
@@ -67,7 +63,7 @@ pageNumber = "{{ :page }}"
             <p class="secondTitle">{{ prod.title_1_page_3 }}</p>
           </div>
           <div class="cpb2b__text">
-            {{ prod.desc_1_page_3|raw }}
+              {{ prod.desc_1_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
         </div>
         <div class="cpb2__block">
@@ -78,9 +74,7 @@ pageNumber = "{{ :page }}"
             <p class="secondTitle">{{ prod.title_2_page_3 }}</p>
           </div>
           <div class="cpb2b__text">
-            <p>
-              {{ prod.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+              {{ prod.desc_2_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
         </div>
         <div class="cpb2__block">
@@ -91,9 +85,7 @@ pageNumber = "{{ :page }}"
             <p class="secondTitle">{{ prod.title_3_page_3 }}</p>
           </div>
           <div class="cpb2b__text">
-            <p>
-              {{ prod.desc_3_page_3|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+              {{ prod.desc_3_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
         </div>
         <div class="color__line"></div>
@@ -102,13 +94,13 @@ pageNumber = "{{ :page }}"
       <div class="content__product__block3">
         <img class="cpb3__img__mobil" src="{{ prod.image_1_page_4.path }}" alt="" />
         <div class="cpb3__block__title">
-          <p class="secondTitle">
+          <p class="content__title">
             {{ prod.title_page_4 }}
           </p>
         </div>
         <div class="cpb3__block__textImg">
           <div class="cpb3b__text">
-            {{ prod.desc_page_4|raw }}
+              {{ prod.desc_page_4|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
           <div class="cpb3b__img">
             <img src="{{ prod.image_1_page_4.path }}" alt="" />

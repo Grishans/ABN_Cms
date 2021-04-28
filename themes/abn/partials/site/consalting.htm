@@ -33,9 +33,7 @@ pageNumber = "{{ :page }}"
           <img src="{{ cons.image_1_page_1.thumb(1035, 660, {mode:'auto', quality:85}) }}" alt="" />
         </div>
         <div class="fc1wb__text">
-          <p class="content__text">
-            {{ cons.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
-          </p>
+            {{ cons.desc_page_1|replace({'<p>':'<p class="content__text">'})|raw }}
         </div>
       </div>
       <div class="fc1w__block2">
@@ -47,9 +45,7 @@ pageNumber = "{{ :page }}"
             <p class="secondTitle">{{ cons.subtitle_1_page_1 }}</p>
           </div>
           <div class="cpb2b__text">
-            <p>
-              {{ cons.subdesc_1_page_1|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+              {{ cons.subdesc_1_page_1|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
         </div>
         <div class="cpb2__block">
@@ -60,7 +56,7 @@ pageNumber = "{{ :page }}"
             <p class="secondTitle">{{ cons.subtitle_2_page_1 }}</p>
           </div>
           <div class="cpb2b__text">
-            {{ cons.subdesc_2_page_1|replace({'<p>':'','</p>':''})|raw }}
+              {{ cons.subdesc_2_page_1|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
         </div>
         <div class="cpb2__block">
@@ -71,7 +67,7 @@ pageNumber = "{{ :page }}"
             <p class="secondTitle">{{ cons.subtitle_3_page_1 }}</p>
           </div>
           <div class="cpb2b__text">
-            {{ cons.subdesc_3_page_1|replace({'<p>':'','</p>':''})|raw }}
+              {{ cons.subdesc_3_page_1|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
         </div>
         <div class="color__line"></div>
@@ -89,11 +85,7 @@ pageNumber = "{{ :page }}"
         <div class="fc2w__block__img">
           <img src="{{ cons.image_1_page_2.thumb(700, 700, {mode:'auto', quality:85}) }}" alt="" />
         </div>
-        <div class="content__text">
-          <p class="content__text">
-            {{ cons.desc_page_2|replace({'<p>':'','</p>':''})|raw }}
-          </p>
-        </div>
+            {{ cons.desc_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
       </div>
       <div class="fc2w__block2">
         <div class="fc2w__block__text">
@@ -105,9 +97,7 @@ pageNumber = "{{ :page }}"
             </div>
             <div class="fc2wbt__block__text">
               <p class="secondTitle">{{ cons.subtitle_1_page_2 }}</p>
-              <p class="content__text">
-                {{ cons.subdesc_1_page_2|replace({'<p>':'','</p>':''})|raw }}
-              </p>
+                {{ cons.subdesc_1_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
             </div>
           </div>
           <div class="fc2wbt__block">
@@ -118,9 +108,7 @@ pageNumber = "{{ :page }}"
             </div>
             <div class="fc2wbt__block__text">
               <p class="secondTitle">{{ cons.subtitle_2_page_2 }}</p>
-              <p class="content__text">
-                {{ cons.subdesc_2_page_2|replace({'<p>':'','</p>':''})|raw }}
-              </p>
+                {{ cons.subdesc_2_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
             </div>
           </div>
           <div class="fc2wbt__block">
@@ -131,9 +119,7 @@ pageNumber = "{{ :page }}"
             </div>
             <div class="fc2wbt__block__text">
               <p class="secondTitle">{{ cons.subtitle_3_page_2 }}</p>
-              <p class="content__text">
-                {{ cons.subdesc_3_page_2|replace({'<p>':'','</p>':''})|raw }}
-              </p>
+                {{ cons.subdesc_3_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
             </div>
           </div>
         </div>
@@ -155,23 +141,21 @@ pageNumber = "{{ :page }}"
           <img src="{{ cons.image_1_page_3.thumb(1205, 655, {mode:'auto', quality:85}) }}" alt="">
         </div>
         <div class="fc3w__block1__text">
-          <p class="content__text">
-            {{ cons.desc_page_3|replace({'<p>':'','</p>':''})|raw }}
-          </p>
+            {{ cons.desc_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
         </div>
       </div>
       <div class="fc3w__block2">
         <div class="fc3w__block2__block">
           <p class="secondTitle">{{ cons.subtitle_1_page_3 }}</p>
-          <p class="content__text">{{ cons.subdesc_1_page_3|replace({'<p>':'','</p>':''})|raw }}</p>
+          {{ cons.subdesc_1_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
         </div>
         <div class="fc3w__block2__block">
           <p class="secondTitle">{{ cons.subtitle_2_page_3 }}</p>
-          <p class="content__text">{{ cons.subdesc_2_page_3|replace({'<p>':'','</p>':''})|raw }}</p>
+          {{ cons.subdesc_2_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
         </div>
         <div class="fc3w__block2__block">
           <p class="secondTitle">{{ cons.subtitle_3_page_3 }}</p>
-          <p class="content__text">{{ cons.subdesc_3_page_3|replace({'<p>':'','</p>':''})|raw }}</p>
+          {{ cons.subdesc_3_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
         </div>
       </div>
       <span class="mainBtn">

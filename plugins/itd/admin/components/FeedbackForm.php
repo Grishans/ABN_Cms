@@ -15,6 +15,11 @@ class FeedbackForm extends ComponentBase
         ];
     }
 
+    function onRender()
+    {
+        $this->page['contact'] = isset($this->page->contactList->records[0]) ? $this->page->contactList->records[0] : null;
+    }
+
     public function onSend()
     {
         $vars = [
@@ -27,8 +32,10 @@ class FeedbackForm extends ComponentBase
 
 
         Mail::send($pat, $vars, function($message) {
-            $message->to('kojiek7212@gmail.com', 'Admin Person ABN');
+            $message->to('info@abninter.com.pt', 'Admin Person ABN');
         });
+
+        return json_encode(['success' => 1]);
     }
 
 

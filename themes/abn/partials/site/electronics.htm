@@ -30,9 +30,7 @@ pageNumber = "{{ :page }}"
         <p class="content__title">
           {{ electronic.title_page_1 }}
         </p>
-        <p class="content__text">
-          {{ electronic.desc_page_1|replace({'<p>':'','</p>':''})|raw }}
-        </p>
+          {{ electronic.desc_page_1|replace({'<p>':'<p class="content__text">'})|raw }}
       </div>
     </div>
     <div class="mainTitle mainTitle__electronic">{{ menu.item_4 }}</div>
@@ -42,7 +40,7 @@ pageNumber = "{{ :page }}"
   <div class="contentBlock">
     <div class="contentBlock__electronics__wrap">
       <div class="contentBlock__electronic__block1">
-        <p class="secondTitle">
+        <p class="content__title">
           {{ electronic.title_page_2 }}
         </p>
         <div class="ceb1__wraps">
@@ -54,10 +52,7 @@ pageNumber = "{{ :page }}"
           </div>
           <div class="ceb1__wrap">
             <div class="cew__text">
-              <p class="content__title">{{ electronic.subtitle_page_2 }}</p>
-              <p class="content__text">
-                {{ electronic.subdesc_page_2|replace({'<p>':'','</p>':''})|raw }}
-              </p>
+                {{ electronic.subdesc_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
             </div>
           </div>
         </div>
@@ -65,34 +60,32 @@ pageNumber = "{{ :page }}"
       <div class="contentBlock__electronic__block2">
         <div class="ceb2__wrap">
           <div class="ceb2w__block">
-            <img src="{{ electronic.image_1_page_3.thumb(180, 180, {mode:'auto', quality:85}) }}" alt="" />
+            <div class="ceb2w__block__img">
+              <img src="{{ electronic.image_1_page_3.thumb(180, 180, {mode:'auto', quality:85}) }}" alt="" />
+            </div>
             <p class="secondTitle">{{ electronic.title_1_page_3 }}</p>
-            <p class="text">
-              {{ electronic.desc_1_page_3|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+              {{ electronic.desc_1_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
           <div class="ceb2w__block">
-            <img src="{{ electronic.image_2_page_3.thumb(180, 180, {mode:'auto', quality:85}) }}" alt="" />
+            <div class="ceb2w__block__img">
+              <img src="{{ electronic.image_2_page_3.thumb(180, 180, {mode:'auto', quality:85}) }}" alt="" />
+            </div>
             <p class="secondTitle">{{ electronic.title_2_page_3 }}</p>
-            <p class="text">
-              {{ electronic.desc_2_page_3|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+              {{ electronic.desc_2_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
           <div class="ceb2w__block">
-            <img src="{{ electronic.image_3_page_3.thumb(180, 180, {mode:'auto', quality:85}) }}" alt="" />
+            <div class="ceb2w__block__img">
+              <img src="{{ electronic.image_3_page_3.thumb(180, 180, {mode:'auto', quality:85}) }}" alt="" />
+            </div>
             <p class="secondTitle">{{ electronic.title_3_page_3 }}</p>
-            <p class="text">
-              {{ electronic.desc_3_page_3|replace({'<p>':'','</p>':''})|raw }}
-            </p>
+              {{ electronic.desc_3_page_3|replace({'<p>':'<p class="content__text">'})|raw }}
           </div>
         </div>
       </div>
       <div class="contentBlock__electronic__block3">
         <div class="cwb3__wrap">
-          <p class="content__title">{{ electronic.title_page_4 }}</p>
-          <p class="content__text">
-            {{ electronic.desc_page_4|replace({'<p>':'','</p>':''})|raw }}
-          </p>
+          <p class="secondTitle">{{ electronic.title_page_4 }}</p>
+            {{ electronic.desc_page_4|replace({'<p>':'<p class="content__text">'})|raw }}
           <span class="mainBtn">
             <span data-slide='7'>Связаться с нами</span>
           </span>

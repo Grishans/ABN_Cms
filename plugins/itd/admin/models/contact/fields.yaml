@@ -31,3 +31,7 @@ fields:
         label: Email
         span: right
         type: text
+    phone_1:
+        label: 'itd.admin::lang.contacts.phone'
+        span: left
+        type: text

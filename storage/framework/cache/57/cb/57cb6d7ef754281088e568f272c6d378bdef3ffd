@@ -1,0 +1,117 @@
+1619425099a:1:{s:7:"404.htm";a:8:{s:8:"fileName";s:7:"404.htm";s:7:"content";s:2094:"title = "Page not found (404)"
+url = "/404"
+
+[builderList notFoundList]
+modelClass = "Itd\Admin\Models\NotFound"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set nf = notFoundList.records[0] %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABN inter</title>
+    <link rel="shortcut icon" href="{{ 'assets//img/favicon.ico'|theme }}" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ 'assets/style/style.css'|theme }}" />
+    {% styles %}
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar__logo">
+        <a href="#">
+          <img src="{{ 'assets/img/logo.png'|theme }}" alt="" />
+        </a>
+      </div>
+      <div class="sidebar__sn">
+        <a href="#">
+          <img src="{{ 'assets/img/socialFb.svg'|theme }}" alt="Facebook" />
+        </a>
+        <a href="#">
+          <img src="{{ 'assets/img/socialInsta.svg'|theme }}" alt="Instagram" />
+        </a>
+      </div>
+      <a class="errorHomeHref" href="/">Домой</a>
+    </div>
+    <div class="content">
+      <div class="fullBlock fullBlock__404">
+        <div class="fullblock__error">
+          <div class="fullblockc__error__text">
+            <p class="content__title">{{ nf.title }}</p>
+            <p class="content__text">{{ nf.desc|replace({'<p>':'','</p>':''})|raw }}</p>
+          </div>
+          <div class="fullblockc__error__img">
+            <img src="{{ 'assets/img/404/404Vector.png'|theme }}" alt="" />
+          </div>
+        </div>
+        <div class="footer">
+          <p>
+            © 2021 <a href="https://itd.company/portfolio/">ITD Company.</a> All
+            rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    {% framework extras %}
+    {% scripts %}
+  </body>
+</html>
+";s:5:"mtime";i:1617017646;s:6:"markup";s:1789:"{% set nf = notFoundList.records[0] %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABN inter</title>
+    <link rel="shortcut icon" href="{{ 'assets//img/favicon.ico'|theme }}" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ 'assets/style/style.css'|theme }}" />
+    {% styles %}
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar__logo">
+        <a href="#">
+          <img src="{{ 'assets/img/logo.png'|theme }}" alt="" />
+        </a>
+      </div>
+      <div class="sidebar__sn">
+        <a href="#">
+          <img src="{{ 'assets/img/socialFb.svg'|theme }}" alt="Facebook" />
+        </a>
+        <a href="#">
+          <img src="{{ 'assets/img/socialInsta.svg'|theme }}" alt="Instagram" />
+        </a>
+      </div>
+      <a class="errorHomeHref" href="/">Домой</a>
+    </div>
+    <div class="content">
+      <div class="fullBlock fullBlock__404">
+        <div class="fullblock__error">
+          <div class="fullblockc__error__text">
+            <p class="content__title">{{ nf.title }}</p>
+            <p class="content__text">{{ nf.desc|replace({'<p>':'','</p>':''})|raw }}</p>
+          </div>
+          <div class="fullblockc__error__img">
+            <img src="{{ 'assets/img/404/404Vector.png'|theme }}" alt="" />
+          </div>
+        </div>
+        <div class="footer">
+          <p>
+            © 2021 <a href="https://itd.company/portfolio/">ITD Company.</a> All
+            rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    {% framework extras %}
+    {% scripts %}
+  </body>
+</html>";s:4:"code";N;s:5:"title";s:20:"Page not found (404)";s:3:"url";s:4:"/404";s:24:"builderList notFoundList";a:8:{s:10:"modelClass";s:25:"Itd\Admin\Models\NotFound";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

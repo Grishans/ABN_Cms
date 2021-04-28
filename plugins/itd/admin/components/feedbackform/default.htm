@@ -1,24 +1,14 @@
-<form  data-request="onSend">
-    <div>
-        <label for="name">Last Name</label>
-        <input type="text" name="name" class="form-control">
+<form data-request="onSend" data-request-success="sendResult(data)">
+    <label for="formName">{{ contact.field_1 }} <p>*</p></label>
+    <input type="text" name="name" id="formName" >
 
-        <p data-validate-for="last_name" class="text-danger"></p> 
-    </div>
+    <label for="formEmail">{{ contact.field_2 }} <p>*</p></label>
+    <input type="email" name="email" id="formEmail" >
 
-    <div>
-        <label for="email">Email</label>
-        <input type="text" name="email" class="form-control">
-        <p data-validate-for="email" class="text-danger"></p> 
-    </div>
+    <label for="formText">{{ contact.field_3 }}</label>
+    <textarea id="formText" name="content" cols="30" rows="10"></textarea>
 
-    <div>
-        <label for="content">Message</label>
-        <textarea rows="6" cols="20" name="content" class="form-control"></textarea>
-        <p data-validate-for="content"  class="text-danger"></p> 
-    </div>
-
-    <div>
-        <button type="submit" class="btn btn-primary" data-attach-loading>Send</button>
-    </div>
+    <span class="mainBtn">
+      <input type="submit" value="{{ contact.text_send_btn }}" id="formBtn">
+    </span>
 </form>

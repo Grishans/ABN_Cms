@@ -1,0 +1,145 @@
+1619425099a:1:{s:16:"site/textile.htm";a:7:{s:8:"fileName";s:16:"site/textile.htm";s:7:"content";s:3131:"[builderList textileList]
+modelClass = "Itd\Admin\Models\Textile"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title_page_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList menuList]
+modelClass = "Itd\Admin\Models\MenuItem"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "item_1"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set textile = textileList.records[0] %}
+{% set menu = menuList.records[0] %}
+
+<section class="block__wrap textile">
+  <div class="fullBlock">
+    <img class="logoMobil" src="{{ 'assets/img/logo.png'|theme }}" alt="">
+    <div class="fullBlock__textile__wrap">
+      <div class="ftw__text">
+        <p class="content__title">
+          {{ textile.title_page_1 }}
+        </p>
+          {{ textile.desc_page_1|replace({'<p>':'<p class="content__text">'})|raw }}
+      </div>
+      <div class="ftw__img">
+        <img src="{{ 'assets/img/Textile/textileVectorTop.png'|theme }}" alt="" />
+      </div>
+    </div>
+    <div class="mainTitle mainTitle__textile1">{{ menu.item_3 }}</div>
+    <div class="mainTitle mainTitle__textile2">{{ menu.item_4 }}</div>
+  </div>
+  <div class="contentBlock">
+    <div class="contentBlock__textile__wrap">
+      <div class="ctw__block1">
+        <img class="textile__block1__bg" src="{{ textile.image_1_page_2.thumb(600, 600, {mode:'auto', quality:85}) }}" alt="" />
+        <div class="ctwb1__text">
+          <p class="content__title">
+            {{ textile.title_page_2 }}
+          </p>
+            {{ textile.desc_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
+        </div>
+      </div>
+      <div class="ctw__block2">
+        <div class="ctw__block2__wrap">
+          <div class="ctw__block2__box">
+            <p class="secondTitle">{{ textile.subtitle_1_page_2 }}</p>
+              {{ textile.subdesc_1_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
+          </div>
+          <div class="ctw__block2__box">
+            <p class="secondTitle">{{ textile.subtitle_2_page_2 }}</p>
+              {{ textile.subdesc_2_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
+          </div>
+          <div class="ctw__block2__box">
+            <p class="secondTitle">{{ textile.subtitle_3_page_2 }}</p>
+              {{ textile.subdesc_3_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
+          </div>
+          <span class="mainBtn">
+            <span data-slide='7'>Связаться с нами</span>
+          </span>
+        </div>
+
+        <img class="textile__block2__bg1" src="{{ textile.image_2_page_2.thumb(600, 600, {mode:'auto', quality:85}) }}" alt="" />
+      </div>
+      <div class="footer">
+        <p>
+          © 2021
+          <a href="https://itd.company/portfolio/">ITD Company.</a>
+          All rights reserved
+        </p>
+      </div>
+    </div>
+  </div>
+  <img class="textile__block2__bg2" src="{{ 'assets/img/Textile/ellipseInfoBottom.svg'|theme }}" alt="" />
+</section>";s:5:"mtime";i:1619422511;s:6:"markup";s:2641:"{% set textile = textileList.records[0] %}
+{% set menu = menuList.records[0] %}
+
+<section class="block__wrap textile">
+  <div class="fullBlock">
+    <img class="logoMobil" src="{{ 'assets/img/logo.png'|theme }}" alt="">
+    <div class="fullBlock__textile__wrap">
+      <div class="ftw__text">
+        <p class="content__title">
+          {{ textile.title_page_1 }}
+        </p>
+          {{ textile.desc_page_1|replace({'<p>':'<p class="content__text">'})|raw }}
+      </div>
+      <div class="ftw__img">
+        <img src="{{ 'assets/img/Textile/textileVectorTop.png'|theme }}" alt="" />
+      </div>
+    </div>
+    <div class="mainTitle mainTitle__textile1">{{ menu.item_3 }}</div>
+    <div class="mainTitle mainTitle__textile2">{{ menu.item_4 }}</div>
+  </div>
+  <div class="contentBlock">
+    <div class="contentBlock__textile__wrap">
+      <div class="ctw__block1">
+        <img class="textile__block1__bg" src="{{ textile.image_1_page_2.thumb(600, 600, {mode:'auto', quality:85}) }}" alt="" />
+        <div class="ctwb1__text">
+          <p class="content__title">
+            {{ textile.title_page_2 }}
+          </p>
+            {{ textile.desc_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
+        </div>
+      </div>
+      <div class="ctw__block2">
+        <div class="ctw__block2__wrap">
+          <div class="ctw__block2__box">
+            <p class="secondTitle">{{ textile.subtitle_1_page_2 }}</p>
+              {{ textile.subdesc_1_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
+          </div>
+          <div class="ctw__block2__box">
+            <p class="secondTitle">{{ textile.subtitle_2_page_2 }}</p>
+              {{ textile.subdesc_2_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
+          </div>
+          <div class="ctw__block2__box">
+            <p class="secondTitle">{{ textile.subtitle_3_page_2 }}</p>
+              {{ textile.subdesc_3_page_2|replace({'<p>':'<p class="content__text">'})|raw }}
+          </div>
+          <span class="mainBtn">
+            <span data-slide='7'>Связаться с нами</span>
+          </span>
+        </div>
+
+        <img class="textile__block2__bg1" src="{{ textile.image_2_page_2.thumb(600, 600, {mode:'auto', quality:85}) }}" alt="" />
+      </div>
+      <div class="footer">
+        <p>
+          © 2021
+          <a href="https://itd.company/portfolio/">ITD Company.</a>
+          All rights reserved
+        </p>
+      </div>
+    </div>
+  </div>
+  <img class="textile__block2__bg2" src="{{ 'assets/img/Textile/ellipseInfoBottom.svg'|theme }}" alt="" />
+</section>";s:4:"code";N;s:23:"builderList textileList";a:8:{s:10:"modelClass";s:24:"Itd\Admin\Models\Textile";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:12:"title_page_1";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:20:"builderList menuList";a:8:{s:10:"modelClass";s:25:"Itd\Admin\Models\MenuItem";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:6:"item_1";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}
